@@ -6,12 +6,12 @@ const images = [
   './res/slide/4.png',
   './res/slide/5.png',
   './res/slide/6.png',
-  './res/slide/7.png',
+  './res/slide/7.jpg',
   './res/slide/8.png',
   './res/slide/9.png',
   './res/slide/10.png',
   './res/slide/11.png',
-  './res/slide/12.png',
+  './res/slide/12.jpg',
 ];
 
 // Get the img element

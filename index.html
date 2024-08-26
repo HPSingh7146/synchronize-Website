@@ -6,12 +6,12 @@
     <title>Stnchronize Website</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <div class="w-full h-screen bg-gray-950 text-white">
-        <div class="bg-image bg-cover bg-center w-4/5 mx-auto  h-screen" style="background-image: url('./res/home.png')">
+<body class="overflow-x-hidden bg-slate-950 text-white">
+    <div class="w-full h-screen">
+        <div class="bg-image bg-cover bg-center w-4/5 mx-auto  h-screen rounded-b-lg" style="background-image: url('./res/home.png')">
             <div class="container mx-auto px-4 py-4 w-4/5">
-                <nav class="justify-around text-center mx-auto w-2/4 absolute:flex-col">
-                    <a>Home</a>
+                <nav class="justify-around text-center mx-auto w-2/4 flex text-xl font-semibold">
+                    <a >Home</a>
                     <a>Event</a>
                     <a>Schedule</a>
                     <a>Contact</a>
@@ -19,16 +19,52 @@
                 <div class="flex mt-60 mx-10 relative">
                     <div class="w-3/5">
                         <h1 class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 text-5xl font-bold">SYnCHronIZe</h1>
-                        <p class="text-2xl mt-4">
+                        <p class="text-2xl my-20">
                             Synchronize is an Intra department IT fest organised by the final year students for their juniors. It encompasses a wide range of technical and non-technical events carefully crafted and conducted by the Computer Science Department
                         </p>
-                        <button>BROCHURE</button>
+                        <button class="bg-gradient-to-r from-purple-400 to-pink-600 px-8 py-4 rounded-full text-xl font-semibold ">BROCHURE</button>
                     </div>
                     <div class="w-2/5 relative">
                         <img src="./res/slide/1.png" id="myImage" alt="slide">
                     </div>
                 </div>
             </div>    
+        </div>
+        <div class="container mx-auto px-4 py-4 w-4/5">
+            <h1 class="text-5xl font-bold text-purple-400">Events :</h1>
+            <p class="text-2xl my-6">Click on the events card to know more </p>
+            <div class="grid grid-cols-3 gap-4 my-20 mx-auto justify-items-center">
+                <div class="relative">
+                    <img src="./res/slide/1.png" class="w-80 h-96 rounded-xl hover:blur transition duration-100 ease-in-out">
+                    <div class="absolute top-0 left-0 w-full h-full bg-purple-400 rounded-xl opacity-0 hover:opacity-100 transition duration-1000 ease-in-out p-4">
+                        <h1 class="text-5xl font-bold my-2" >IT Manager</h1>
+                        <p class="text-base my-2">Yatha Raja Tatha Praja (As the ruler does, so do the citizens)</p>
+                        <p class="text-lg my-2 font-semibold">Individual | 4 rounds</p>
+                        <p>This event tests our potential IT Manafers of their kaushalya viveka and vichara by putting them into precarious situations. May the rightful leader don the crown!</p>
+                        <button class="bg-gradient-to-r from-purple-400 to-pink-600 px-8 py-4 rounded-full text-xl font-semibold items-center mx-auto">
+                            Register
+                          </button>
+                    </div>
+                </div>
+                
+                <img src="./res/slide/2.png" class="w-80 h-96 rounded-xl">
+                <img src="./res/slide/3.png" class="w-80 h-96 rounded-xl">
+            </div>
+            <div class="grid grid-cols-3 gap-4 my-20 mx-auto justify-items-center">
+                <img src="./res/slide/4.png" class="w-80 h-96 rounded-xl">
+                <img src="./res/slide/5.png" class="w-80 h-96 rounded-xl">
+                <img src="./res/slide/6.png" class="w-80 h-96 rounded-xl">
+            </div>
+            <div class="grid grid-cols-3 gap-4 my-20 mx-auto justify-items-center">
+                <img src="./res/slide/7.jpg" class="w-80 h-96 rounded-xl">
+                <img src="./res/slide/8.png" class="w-80 h-96 rounded-xl">
+                <img src="./res/slide/9.png" class="w-80 h-96 rounded-xl">
+            </div>
+            <div class="grid grid-cols-3 gap-4 my-20 mx-auto justify-items-center">
+                <img src="./res/slide/10.png" class="w-80 h-96 rounded-xl">
+                <img src="./res/slide/11.png" class="w-80 h-96 rounded-xl">
+                <img src="./res/slide/12.jpg" class="w-80 h-96 rounded-xl">
+            </div>
         </div>
     </div>
 </body>
