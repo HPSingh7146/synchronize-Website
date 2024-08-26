@@ -7,8 +7,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="overflow-x-hidden bg-slate-950 text-white">
-    <div class="w-full h-screen">
-        <div class="bg-image bg-cover bg-center w-4/5 mx-auto  h-screen rounded-b-lg" style="background-image: url('./res/home.png')">
+    <div class="w-full h-screen"> <!-- main container -->
+
+        <div class="bg-image bg-cover bg-center w-4/5 mx-auto  h-screen rounded-b-lg" style="background-image: url('./res/home.png')"> <!-- home area -->
             <div class="container mx-auto px-4 py-4 w-4/5">
                 <nav class="justify-around text-center mx-auto w-2/4 flex text-xl font-semibold">
                     <a >Home</a>
@@ -29,8 +30,9 @@
                     </div>
                 </div>
             </div>    
-        </div>
-        <div class="container mx-auto px-4 py-4 w-4/5">
+        </div> <!-- home area End -->
+
+        <div class="container mx-auto px-4 py-4 w-4/5"> <!-- events area -->
             <h1 class="text-5xl font-bold text-purple-400">Events :</h1>
             <p class="text-2xl my-6">Click on the events card to know more </p>
             <div class="grid grid-cols-3 gap-4 my-20 mx-auto justify-items-center">
@@ -65,7 +67,7 @@
                 <img src="./res/slide/11.png" class="w-80 h-96 rounded-xl">
                 <img src="./res/slide/12.jpg" class="w-80 h-96 rounded-xl">
             </div>
-        </div>
-    </div>
+        </div> <!-- events area End -->
+    </div> <!-- main container End -->
 </body>
 </html>
