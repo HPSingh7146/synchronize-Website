@@ -37,3 +37,17 @@ setInterval(() => {
 
   console.log('Next image:', imgElement.src);
 }, 5000);
+
+const exploreMoreButton = document.getElementById('explore-more-button');
+const popup = document.querySelector('.popup');
+
+exploreMoreButton.addEventListener('click', () => {
+  popup.classList.remove('hidden');
+});
+
+popup.addEventListener('click', (event) => {
+  if (event.target === popup) {
+    popup.classList.add('hidden');
+  }
+});
+
