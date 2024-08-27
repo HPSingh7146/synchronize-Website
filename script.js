@@ -37,3 +37,13 @@ setInterval(() => {
 
   console.log('Next image:', imgElement.src);
 }, 5000);
+
+
+
+const menuButton = document.getElementById('menu');
+const navMenu = document.getElementById('nav');
+  menuButton.addEventListener('click', () => {
+  navMenu.classList.toggle('hidden');
+});
+
+
