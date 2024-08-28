@@ -56,6 +56,8 @@ const th = document.getElementById('popup-TechHunt')
 const val = document.getElementById('popup-Val')
 const vid = document.getElementById('popup-Vid')
 const px = document.getElementById('popup-Px')
+const iot = document.getElementById('popup-IOT')
+const inspira = document.getElementById('popup-Inspira')
 
 function openModal() {
   card.classList.add('fixed');
@@ -152,6 +154,26 @@ function openPx() {
 function closePx() {
   px.classList.add('hidden')
   px.classList.remove('fixed')
+}
+
+function openIOT() {
+  iot.classList.add('fixed')
+  iot.classList.remove('hidden')
+}
+
+function closeIOT() {
+  iot.classList.add('hidden')
+  iot.classList.remove('fixed')
+}
+
+function openInspira() {
+  inspira.classList.add('fixed')
+  inspira.classList.remove('hidden')
+}
+
+function closeInspira() {
+  inspira.classList.add('hidden')
+  inspira.classList.remove('fixed')
 }
 
 
