@@ -46,4 +46,64 @@ const navMenu = document.getElementById('nav');
   navMenu.classList.toggle('hidden');
 });
 
+const card = document.getElementById('popup');
+const agora = document.getElementById('popup-Agora');
+const cV = document.getElementById('popup-CodeVerse')
+const weblynx = document.getElementById('popup-Weblynx')
+const syn = document.getElementById('popup-Synergia')
+
+function openModal() {
+  card.classList.add('fixed');
+  card.classList.remove('hidden');
+}
+
+function openAgora() {
+  agora.classList.add('fixed');
+  agora.classList.remove('hidden')
+}
+
+function closeAgora() {
+  agora.classList.add('hidden');
+  agora.classList.remove('fixed')
+}
+
+function openCodeVerse() {
+  cV.classList.add('fixed')
+  cV.classList.remove('hidden')
+
+}
+
+function closeCodeVerse() {
+  cV.classList.add('hidden')
+  cV.classList.remove('fixed')
+}
+
+function openSynergia() {
+  syn.classList.add('fixed')
+  syn.classList.remove('hidden')
+}
+
+function closeSynergia() {
+  syn.classList.add('hidden')
+  syn.classList.remove('fixed')
+}
+
+function openWeblynx() {
+  weblynx.classList.add('fixed')
+  weblynx.classList.remove('hidden')
+
+}
+
+function closeWeblynx() {
+  weblynx.classList.add('hidden')
+  weblynx.classList.remove('fixed')
+}
+
+
+
+function closeModal() {
+  card.classList.remove('fixed');
+  card.classList.add('hidden');
+}
+
 
