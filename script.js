@@ -51,6 +51,11 @@ const agora = document.getElementById('popup-Agora');
 const cV = document.getElementById('popup-CodeVerse')
 const weblynx = document.getElementById('popup-Weblynx')
 const syn = document.getElementById('popup-Synergia')
+const bq = document.getElementById('popup-ByteQuest')
+const th = document.getElementById('popup-TechHunt')
+const val = document.getElementById('popup-Val')
+const vid = document.getElementById('popup-Vid')
+const px = document.getElementById('popup-Px')
 
 function openModal() {
   card.classList.add('fixed');
@@ -97,6 +102,56 @@ function openWeblynx() {
 function closeWeblynx() {
   weblynx.classList.add('hidden')
   weblynx.classList.remove('fixed')
+}
+
+function openByteQuest() {
+  bq.classList.add('fixed')
+  bq.classList.remove('hidden')
+}
+
+function closeByteQuest() {
+  bq.classList.add('hidden')
+  bq.classList.remove('fixed')
+}
+
+function openTechHunt() {
+  th.classList.add('fixed')
+  th.classList.remove('hidden')
+}
+
+function closeTechHunt() {
+  th.classList.add('hidden')
+  th.classList.remove('fixed')
+}
+
+function openVal() {
+  val.classList.add('fixed')
+  val.classList.remove('hidden')
+}
+
+function closeVal() {
+  val.classList.add('hidden')
+  val.classList.remove('fixed')
+}
+
+function openVid() {
+  vid.classList.add('fixed')
+  vid.classList.remove('hidden')
+}
+
+function closeVid() {
+  vid.classList.add('hidden')
+  vid.classList.remove('fixed')
+}
+
+function openPx() {
+  px.classList.add('fixed')
+  px.classList.remove('hidden')
+}
+
+function closePx() {
+  px.classList.add('hidden')
+  px.classList.remove('fixed')
 }
 
 
