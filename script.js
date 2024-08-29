@@ -60,127 +60,103 @@ const iot = document.getElementById('popup-IOT')
 const inspira = document.getElementById('popup-Inspira')
 
 function openModal() {
-  card.classList.add('fixed');
-  card.classList.remove('hidden');
+  card.style.left = "50%"
 }
 
 function openAgora() {
-  agora.classList.add('fixed');
-  agora.classList.remove('hidden')
+  agora.style.left = "50%"
 }
 
 function closeAgora() {
-  agora.classList.add('hidden');
-  agora.classList.remove('fixed')
+  agora.style.left = "150%"
 }
 
 function openCodeVerse() {
-  cV.classList.add('fixed')
-  cV.classList.remove('hidden')
+  cV.style.left = "50%"
 
 }
 
 function closeCodeVerse() {
-  cV.classList.add('hidden')
-  cV.classList.remove('fixed')
+  cV.style.left = "150%"
 }
 
 function openSynergia() {
-  syn.classList.add('fixed')
-  syn.classList.remove('hidden')
+  syn.style.left = "50%"
 }
 
 function closeSynergia() {
-  syn.classList.add('hidden')
-  syn.classList.remove('fixed')
+  syn.style.left = "150%"
 }
 
 function openWeblynx() {
-  weblynx.classList.add('fixed')
-  weblynx.classList.remove('hidden')
+  weblynx.style.left = "50%"
 
 }
 
 function closeWeblynx() {
-  weblynx.classList.add('hidden')
-  weblynx.classList.remove('fixed')
+  weblynx.style.left = "150%"
 }
 
 function openByteQuest() {
-  bq.classList.add('fixed')
-  bq.classList.remove('hidden')
+  bq.style.left = "50%"
 }
 
 function closeByteQuest() {
-  bq.classList.add('hidden')
-  bq.classList.remove('fixed')
+  bq.style.left = "150%"
 }
 
 function openTechHunt() {
-  th.classList.add('fixed')
-  th.classList.remove('hidden')
+  th.style.left = "50%"
 }
 
 function closeTechHunt() {
-  th.classList.add('hidden')
-  th.classList.remove('fixed')
+  th.style.left = "150%"
 }
 
 function openVal() {
-  val.classList.add('fixed')
-  val.classList.remove('hidden')
+  val.cstyle.left = "50%"
 }
 
 function closeVal() {
-  val.classList.add('hidden')
-  val.classList.remove('fixed')
+  val.style.left = "150%"
 }
 
 function openVid() {
-  vid.classList.add('fixed')
-  vid.classList.remove('hidden')
+  vid.style.left = "50%"
 }
 
 function closeVid() {
-  vid.classList.add('hidden')
-  vid.classList.remove('fixed')
+  vid.style.left = "150%"
 }
 
 function openPx() {
-  px.classList.add('fixed')
-  px.classList.remove('hidden')
+  px.style.left = "50%"
 }
 
 function closePx() {
-  px.classList.add('hidden')
-  px.classList.remove('fixed')
+  px.style.left = "150%"
 }
 
 function openIOT() {
-  iot.classList.add('fixed')
-  iot.classList.remove('hidden')
+  iot.style.left = "50%"
 }
 
 function closeIOT() {
-  iot.classList.add('hidden')
-  iot.classList.remove('fixed')
+  iot.style.left = "150%"
 }
 
 function openInspira() {
-  inspira.classList.add('fixed')
-  inspira.classList.remove('hidden')
+  inspira.style.left = "50%"
 }
 
 function closeInspira() {
-  inspira.classList.add('hidden')
-  inspira.classList.remove('fixed')
+  inspira.style.left = "150%"
 }
 
 
 
 function closeModal() {
-  card.classList.remove('fixed');
-  card.classList.add('hidden');
+  card.style.left = "150%"
 }
 
 
