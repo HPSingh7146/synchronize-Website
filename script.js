@@ -1,15 +1,15 @@
 // Define the array of images
 const images = [
   './res/slide/1.png',
-  './res/slide/2.png',
-  './res/slide/3.png',
-  './res/slide/4.png',
+  './res/logos/agora.png',
+  './res/logos/bytequest.png',
+  './res/logos/codeverse.png',
+  './res/logos/inspira.png',
+  './res/logos/iotize.png',
+  './res/logos/pixelate.png',
+  './res/logos/synergia.png',
+  './res/logos/valorant.png',
   './res/slide/5.png',
-  './res/slide/6.png',
-  './res/slide/7.jpg',
-  './res/slide/8.png',
-  './res/slide/9.png',
-  './res/slide/10.png',
   './res/slide/11.png',
   './res/slide/12.jpg',
 ];
