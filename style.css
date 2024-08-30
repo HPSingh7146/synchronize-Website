@@ -1,3 +1,14 @@
+button {
+  background: none !important;
+  border: white 2px solid !important;
+  transition: 0.5s ease-in-out;
+}
+
+button:hover {
+  background-color: red !important;
+  transform: scale(1.05);
+}
+
 .round-heading {
     font-weight: bolder;
     font-size: 1.2rem;
@@ -11,3 +22,47 @@
 .pixelate{
   box-shadow: 2px 2px 2px #dfdfdf;
 }
+
+@media screen and (min-width: 1280px){
+  .popup {
+    left: 50%;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #fe8348;
+    justify-content: space-between;
+    width: 60%;
+    height: 60%;
+    padding: 0 !important;
+  }
+  
+  .popup-content {
+    width: 35rem;
+    margin-right: 0;
+  }
+  
+  .popup-left {
+    flex-direction: column !important;
+    margin: 0;
+  }
+
+  .popup-left > div {
+    margin-bottom: 5rem;
+  }
+
+  .popup-right{
+    width: 46rem;
+  }
+
+  .popup-right > div {
+    margin: 0;
+    height: 36rem;
+    width: 100%;
+    max-height: none;
+  }
+  
+
+
+  
+}
+
+
