@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Factions List</title>
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Firebase SDKs -->
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore.js"></script>
+    <script type="module" src="myConfig.js"></script>
 </head>
 <body class="bg-slate-950 text-white">
     <div class="p-4">
@@ -12,20 +17,61 @@
 
         <form action="" class="mt-4 bg-slate-700 p-4 rounded-md">
             <label for="roll">Enter your roll number: </label>
-            <input type="text" name="roll" id="roll" class="border-2 rounded-md w-full">
+            <input type="text" name="roll" id="rollnumber" class="border-2 rounded-md w-full" style="color: black;">
     
-            <input type="button" value="Submit" class="block p-2 bg-red-600 text-white m-2 mx-auto w-32 rounded-md text-lg">
+            <input id="fetchDetailsBtn" type="button" value="Submit" class="block p-2 bg-red-600 text-white m-2 mx-auto w-32 rounded-md text-lg">
             <div class="mt-8">
-                <p>Your name: </p> <span></span>
-                <p>Your Faction name: </p> <span></span>
-
+                <p>Your name: </p> <span id="fetchedName"></span>
+                <p>Your Faction name: </p> <span id="fetchedFaction"></span>
             </div>
             
-            <div class="flex justify-center mt-16">
-                <a href="" class="bg-green-600 px-8 py-4 rounded-xl">Join the WhatsApp Group!</a>
+            <div class="whatsapplink flex justify-center mt-16">
+                <button id="whatsapplink" class="bg-red-600 px-8 py-4 rounded-xl" disabled>Join the WhatsApp Group</button>
             </div>
             
         </form>
     </div>
+
+    <script type="module">
+        // Modular imports
+        import { db } from './MyConfig.js';
+        import { doc, getDoc } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore.js";
+
+        document.getElementById('fetchDetailsBtn').addEventListener('click', async () => {
+            // Get the rollno from the textbox
+            const rollNumber = document.getElementById('rollnumber').value.trim();
+            if (!rollNumber) {
+                alert("Please enter a roll number");
+                return;
+            }
+
+            let found = false;
+
+            const factionDocs = ['Techvinzo', 'SynchroForge', 'SiliconDawgs', 'TechHaven', 'TechBrigade', 'TechnoMystics'];
+
+            // Check each faction for the rollno, if found, modify the elements
+            for (const faction of factionDocs) {
+                const docRef = doc(db, 'Synchronize', faction);
+                const docSnap = await getDoc(docRef);
+
+                if (docSnap.exists() && docSnap.data().hasOwnProperty(rollNumber)) {
+                    const name = docSnap.data()[rollNumber];
+                    document.getElementById('fetchedName').textContent = name;
+                    document.getElementById('fetchedFaction').textContent = faction;
+                    document.getElementById('whatsapplink').disabled = false;
+                    found = true;
+                    break;
+                }
+            }
+
+            // Alert and clear if the rollno isn't found
+            if (!found) {
+                alert("Roll number not found.");
+                document.getElementById('fetchedName').textContent = "";
+                document.getElementById('fetchedFaction').textContent = "";
+                document.getElementById('whatsapplink').disabled = true;
+            }
+        });
+    </script>
 </body>
 </html>
