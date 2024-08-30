@@ -14,21 +14,27 @@
 <body class="bg-black text-white">
     <div class="px-4 flex flex-col lg:flex-row lg:py-10 items-center justify-center lg:mt-20">
         <img src="./res/Synchronize logo(1).png" alt="logo" class=" mx-auto lg:mx-0 lg:max-w-[50%]">
-        <form action="" onsubmit="return false;" class="mt-4 bg-[url('./res/card-bg.png')] bglogo bg-cover bg-center bg-no-repeat lg:w-[700px] max-w-[800px] py-2 px-4 rounded-xl">
-            <h1 class="text-center text-3xl font-bold mb-4  text-white">Find your Faction!</h1>
+        <form action="" onsubmit="return false;" class="mt-4 bg-slate-950 border-4 border-red-900 lg:w-[700px] max-w-[800px] py-2 px-4 rounded-xl">
+            <h1 class="text-center text-3xl font-bold m-4 text-white">Find your Faction!</h1>
             <label for="roll" class="text-xl font-semibold">Enter your roll number: </label>
             <div class="flex justify-center">
                 <input type="text" name="roll" id="rollnumber" class="border-none p-2 my-4 outline-none rounded-md w-full lg:w-[90%]" style="color: black;">
               </div>
     
-            <input id="fetchDetailsBtn" type="button" value="Submit" class="block p-2 border-4  text-white m-2 mx-auto w-32 rounded-xl text-xl font-semibold">
+            <input id="fetchDetailsBtn" type="button" value="Submit" class="block p-2 border-4  text-white m-2 mx-auto w-32 rounded-xl text-xl font-semibold active:bg-blue-500">
             <div class="mt-8">
-                <p class="font-semibold text-xl">Your name: </p> <span id="fetchedName"></span><br>
-                <p class="font-semibold text-xl">Your Faction name: </p> <span id="fetchedFaction"></span>
+                <div class="flex flex-col justify-center my-4 lg:flex-row lg:justify-start">
+                    <p class="font-semibold text-xl text-center ">Your name: </p> 
+                    <span id="fetchedName" class="text-xl mx-2 text-center"></span><br>
+                </div>
+                <div class="flex flex-col justify-center my-4 lg:flex-row lg:justify-start">
+                    <p class="font-semibold text-xl text-cente ">Your Faction name: </p> 
+                    <span id="fetchedFaction" class="text-xl mx-2 text-center"></span>
+                </div>
             </div>
             
             <div class="whatsapplink flex justify-center mt-16">
-                <button id="whatsapplink" class="border-4 px-8 py-4 rounded-xl text-xl font-semibold" disabled>Join the WhatsApp Group</button>
+                <button id="whatsapplink" class="border-4 px-8 py-4 rounded-xl text-xl font-semibold my-4" disabled>Join the WhatsApp Group</button>
             </div>
             
         </form>
