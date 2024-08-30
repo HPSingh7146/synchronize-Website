@@ -9,11 +9,6 @@ button:hover {
   transform: scale(1.05);
 }
 
-.round-heading {
-    font-weight: bolder;
-    font-size: 1.2rem;
-}
-
 .whatsapplink .active{
   background-color: rgb(147, 226, 147);
   transition: all 0.3s ease-in;

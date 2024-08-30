@@ -53,8 +53,8 @@
           >
             <nav class="flex flex-col items-center font-semibold">
               <a class="mb-4" href="#home">Home</a>
-              <a class="mb-4" href="#event">Event</a>
-              <a class="mb-4" href="#schedule">Schedule</a>
+              <a class="mb-4" href="#event" id="event-link">Event</a>
+              <a class="mb-4" href="#schedule" id="schedule-link">Schedule</a>
               <a class="mb-4" href="#contact">Contact</a>
             </nav>
           </div>
@@ -67,7 +67,7 @@
             <a class="group lg:text-2xl mr-8" href="#event" id="event-link">Event
               <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-[#A90033]"></span>
             </a>
-            <a class="group lg:text-2xl mr-8" href="#schedule">Schedule
+            <a class="group lg:text-2xl mr-8" href="#schedule" id="schedule-link">Schedule
               <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-[#A90033]"></span>
             </a>
             <a class="group lg:text-2xl mr-8" href="#contact">Contact
@@ -76,12 +76,12 @@
           </nav>
         </div>
         <div
-          class="flex flex-col justify-center items-center text-justify sm:flex-row-reverse sm:ml-4 sm:my-10 md:-my-14 px-4 py-20 md:py-28 xl:pt-80"
+          class="flex flex-col justify-center items-center text-justify sm:flex-row-reverse mt-28 sm:ml-4 sm:my-10 md:-my-14 px-4 py-20 md:py-28 xl:pt-80"
         >
           <div class="my-4 sm:w-4/5 lg:mx-8 flex flex-col items-center">
-            <img src="res/logos/synchronize.png" alt="Synchronize" class="block w-[22rem] sm:w-[38rem]">
+            <img src="res/logos/synchronize.png" alt="Synchronize" class="block w-[22rem] sm:w-[38rem] mb-5">
             <p
-              class="w-[94%] mx-3 font-bold mb-3 text-lg sm:text-xl sm:w-[80%] sm:mx-0 md:my-6"
+              class="w-[94%] mx-3 p-3 font-bold mb-3 text-lg sm:text-xl sm:w-[80%] sm:mx-0 md:my-6"
             >
               Synchronize is an Intra department IT fest organised by the final
               year students for their juniors. It encompasses a wide range of
@@ -90,12 +90,12 @@
             </p>
             <div class="flex justify-between items-center sm:justify-start">
               <button
-              class="bg-gradient-to-r from-[#A93300] to-[#A90033] w-44 py-3 rounded-full text-xl font-semibold mt-12 mx-4"
+              class="bg-gradient-to-r from-[#A93300] to-[#A90033] w-36 py-3 rounded-full text-lg font-semibold mt-12 mx-4"
               >
                 BROCHURE
               </button>
               <button
-              class="bg-gradient-to-r from-[#A93300] to-[#A90033] w-44 py-3 rounded-full text-xl font-semibold mt-12 mx-4"
+              class="bg-gradient-to-r from-[#A93300] to-[#A90033] w-36 py-3 rounded-full text-lg font-semibold mt-12 mx-4"
               >
                 FACTIONS
               </button>
@@ -177,13 +177,13 @@
                 >
                   <!-- your popup content here -->
                   <h2 class="text-2xl font-bold text-center p-4">
-                    Guidelines for IT Manager:
+                    Guidelines
                   </h2>
                   <div
-                    class="rounds my-1 bg-black p-4 bg-opacity-55 rounded-md"
+                    class="rounds my-1 p-4 rounded-md"
                   >
-                    <p>Round 1: Aptitude Test (Online)</p>
-                    <ul class="font-semibold pl-4 [list-style:circle]">
+                    <p class="font-semibold">Round 1: Aptitude Test (Online)</p><br>
+                    <ul class=" pl-4 [list-style:circle]">
                       <li>Conducted in a controlled lab via Google Forms.</li>
                       <li>Strictly no calculators or mobile devices.</li>
                       <li>Complete within the set time frame.</li>
@@ -191,8 +191,8 @@
                     </ul>
                   </div>
                   <div class="rounds my-1 p-4">
-                    <p>Round 2: Oratory Face-Off</p>
-                    <ul class="font-semibold pl-4 [list-style:circle]">
+                    <p class="font-semibold">Round 2: Oratory Face-Off</p><br>
+                    <ul class=" pl-4 [list-style:circle]">
                       <li>Topic will be given a day before</li>
                       <li>
                         Prepare a general debate structure focusing on
@@ -202,10 +202,10 @@
                     </ul>
                   </div>
                   <div
-                    class="rounds my-1 p-4 bg-black bg-opacity-55 rounded-md"
+                    class="rounds my-1 p-4  rounded-md"
                   >
-                    <p>Round 3: The CEO Showdown</p>
-                    <ul class="font-semibold pl-4 [list-style:circle]">
+                    <p class="font-semibold">Round 3: The CEO Showdown</p><br>
+                    <ul class=" pl-4 [list-style:circle]">
                       <li>
                         Craft and present an action plan for a hypothetical
                         startup.
@@ -218,8 +218,8 @@
                     </ul>
                   </div>
                   <div class="rounds my-1 p-4">
-                    <p>Final Round: The HR Interview</p>
-                    <ul class="font-semibold pl-4 [list-style:circle]">
+                    <p class="font-semibold">Final Round: The HR Interview</p><br>
+                    <ul class=" pl-4 [list-style:circle]">
                       <li>A one-on-one interview to prove your mettle.</li>
                       <li>
                         Resume is a must and be ready to discuss strengths,
@@ -262,12 +262,12 @@
                   class="flex justify-around xl:w-[30rem] xl:ml-0 items-center"
                 >
                   <button
-                    class="bg-gradient-to-r from-[#A93300] to-[#A90033] lg:w-48 lg:h-16 w-36 h-[3rem] rounded-xl text-xl font-semibold bottom-0"
+                    class="lg:w-48 lg:h-16 w-36 h-[3rem] rounded-xl text-xl font-semibold bottom-0"
                   >
                     Register Now
                   </button>
                   <button
-                    class="bg-gradient-to-r from-[#A93300] to-[#A90033] lg:w-48 lg:h-16 w-36 h-[3rem] rounded-xl text-xl font-semibold bottom-0"
+                    class="lg:w-48 lg:h-16 w-36 h-[3rem] rounded-xl text-xl font-semibold bottom-0"
                     onclick="closeModal()"
                   >
                     Close
@@ -328,13 +328,13 @@
                 >
                   <!-- your popup content here -->
                   <h2 class="text-2xl font-bold text-center p-4">
-                    Guidelines for Agora:
+                    Guidelines
                   </h2>
                   <div
-                    class="rounds my-1 bg-black p-4 bg-opacity-55 rounded-md"
+                    class="rounds my-1 p-4 rounded-md"
                   >
-                    <p>Round 1: Echo Chamber: Audio to Action</p>
-                    <ul class="font-semibold pl-4 [list-style:circle]">
+                    <p class="font-semibold">Round 1: Echo Chamber: Audio to Action</p><br>
+                    <ul class="pl-4 [list-style:circle]">
                       <li>
                         Audio will be played on spot based on that MCQ will be
                         there
@@ -344,8 +344,8 @@
                     </ul>
                   </div>
                   <div class="rounds my-1 p-4">
-                    <p>Round 2: Visual Connect: Tech and Ethics Edition</p>
-                    <ul class="font-semibold pl-4 [list-style:circle]">
+                    <p class="font-semibold">Round 2: Visual Connect: Tech and Ethics Edition</p><br>
+                    <ul class=" pl-4 [list-style:circle]">
                       <li>
                         The Participants will engage with a dynamic PowerPoint
                         presentation featuring a series of images.
@@ -363,10 +363,10 @@
                     </ul>
                   </div>
                   <div
-                    class="rounds my-1 p-4 bg-black bg-opacity-55 rounded-md"
+                    class="rounds my-1 p-4 rounded-md"
                   >
-                    <p>Round 3: Newsroom : live clash</p>
-                    <ul class="font-semibold pl-4 [list-style:circle]">
+                    <p class="font-semibold">Round 3: Newsroom : live clash</p><br>
+                    <ul class="pl-4 [list-style:circle]">
                       <li>
                         Participants will be grouped into pairs. Each pair will
                         take on the roles of news reporters to debate with their
@@ -421,12 +421,12 @@
                   class="flex justify-around xl:w-[30rem] xl:ml-16 items-center"
                 >
                   <button
-                    class="bg-gradient-to-r from-[#A93300] to-[#A90033] lg:w-48 lg:h-16 w-36 h-[3rem] rounded-xl text-xl font-semibold bottom-0"
+                    class=" lg:w-48 lg:h-16 w-36 h-[3rem] rounded-xl text-xl font-semibold bottom-0"
                   >
                     Register Now!
                   </button>
                   <button
-                    class="bg-gradient-to-r from-[#A93300] to-[#A90033] lg:w-48 lg:h-16 w-36 h-[3rem] rounded-xl text-xl font-semibold bottom-0"
+                    class=" lg:w-48 lg:h-16 w-36 h-[3rem] rounded-xl text-xl font-semibold bottom-0"
                     onclick="closeAgora()"
                   >
                     Close
@@ -469,7 +469,7 @@
                   <div class="flex justify-center items-end">
                     <button
                       id="explore-more-button"
-                      class="bg-gradient-to-r from-[#A93300] to-[#A90033] px-9 py-3 my-4 rounded-full text-xl font-semibold absolute bottom-0"
+                      class=" px-9 py-3 my-4 rounded-full text-xl font-semibold absolute bottom-0"
                       onclick="openCodeVerse()"
                     >
                       Explore More
@@ -488,13 +488,13 @@
                 >
                   <!-- your popup content here -->
                   <h2 class="text-2xl font-bold text-center p-4">
-                    Guidelines for CodeVerse:
+                    Guidelines
                   </h2>
                   <div
                     class="rounds my-1 bg-black p-4 bg-opacity-55 rounded-md"
                   >
-                    <p>Round 1 (Preliminary):</p>
-                    <ul class="font-semibold pl-4 [list-style:circle]">
+                    <p class="font-semibold">Round 1 (Preliminary):</p><br>
+                    <ul class=" pl-4 [list-style:circle]">
                       <li>Time Limit: 30 minutes</li>
                       <li>Number of Questions: 20</li>
                       <li>
@@ -512,8 +512,8 @@
                     </ul>
                   </div>
                   <div class="rounds my-1 p-4">
-                    <p>Round 2 (Reverse Coding / Decoding):</p>
-                    <ul class="font-semibold pl-4 [list-style:circle]">
+                    <p class="font-semibold">Round 2 (Reverse Coding / Decoding):</p><br>
+                    <ul class=" pl-4 [list-style:circle]">
                       <li>Time Limit: 40 minutes</li>
                       <li>Number of Questions: 4</li>
                       <li>Programming Languages: C, Java, Python</li>
@@ -533,10 +533,10 @@
                     </ul>
                   </div>
                   <div
-                    class="rounds my-1 p-4 bg-black bg-opacity-55 rounded-md"
+                    class="rounds my-1 p-4 rounded-md"
                   >
-                    <p>Round 3 (Coding):</p>
-                    <ul class="font-semibold pl-4 [list-style:circle]">
+                    <p class="font-semibold">Round 3 (Coding):</p><br>
+                    <ul class=" pl-4 [list-style:circle]">
                       <li>Time Limit: 50 minutes</li>
                       <li>Number of Questions: 5</li>
                       <li>Programming Languages: C, Java, Python</li>
@@ -593,12 +593,12 @@
                   class="flex justify-around xl:w-[30rem] xl:ml-16 items-center"
                 >
                   <button
-                    class="bg-gradient-to-r from-[#A93300] to-[#A90033] lg:w-48 lg:h-16 w-36 h-[3rem] rounded-xl text-xl font-semibold bottom-0"
+                    class=" lg:w-48 lg:h-16 w-36 h-[3rem] rounded-xl text-xl font-semibold bottom-0"
                   >
                     Register Now!
                   </button>
                   <button
-                    class="bg-gradient-to-r from-[#A93300] to-[#A90033] lg:w-48 lg:h-16 w-36 h-[3rem] rounded-xl text-xl font-semibold bottom-0"
+                    class=" lg:w-48 lg:h-16 w-36 h-[3rem] rounded-xl text-xl font-semibold bottom-0"
                     onclick="closeCodeVerse()"
                   >
                     Close
@@ -638,7 +638,7 @@
                   <div class="flex justify-center items-end">
                     <button
                       id="explore-more-button"
-                      class="bg-gradient-to-r from-[#A93300] to-[#A90033] px-9 py-3 my-4 rounded-full text-xl font-semibold absolute bottom-0"
+                      class="px-9 py-3 my-4 rounded-full text-xl font-semibold absolute bottom-0"
                       onclick="openSynergia()"
                     >
                       Explore More
@@ -660,10 +660,10 @@
                     Guidelines for Synergia:
                   </h2>
                   <div
-                    class="rounds my-1 bg-black p-4 bg-opacity-55 rounded-md"
+                    class="rounds my-1 p-45 rounded-md"
                   >
-                    <p>Round 1: Tech Image Identification</p>
-                    <ul class="font-semibold pl-4 [list-style:circle]">
+                    <p  class="font-semibold">Round 1: Tech Image Identification</p><br>
+                    <ul class=" pl-4 [list-style:circle]">
                       <li>
                         Objective: Identify blurred technology logos (e.g.,
                         Apple, Google).
@@ -676,8 +676,8 @@
                     </ul>
                   </div>
                   <div class="rounds my-1 p-4">
-                    <p>Round 2: Collaborative Mini-Tasks:</p>
-                    <ul class="font-semibold pl-4 [list-style:circle]">
+                    <p class="font-semibold">Round 2: Collaborative Mini-Tasks:</p><br>
+                    <ul class=" pl-4 [list-style:circle]">
                       <li>Objective: Test teamwork and problem-solving.</li>
                       <li>
                         Format: Each team member completes a mini-task (e.g.,
@@ -695,10 +695,10 @@
                     </ul>
                   </div>
                   <div
-                    class="rounds my-1 p-4 bg-black bg-opacity-55 rounded-md"
+                    class="rounds my-1 p-4 rounded-md"
                   >
-                    <p>Round 3: Risk-Based Quiz:</p>
-                    <ul class="font-semibold pl-4 [list-style:circle]">
+                    <p class="font-semibold">Round 3: Risk-Based Quiz:</p><br>
+                    <ul class=" pl-4 [list-style:circle]">
                       <li>
                         Objective: Balance risk and reward by selecting
                         questions of varying difficulty (Easy, Medium, Hard).
@@ -735,12 +735,6 @@
                   <ul class="p-3 xl:text-xl pl-0">
                     <li class="font-semibold xl:my-3">
                       Sadhana - 22BCAA50
-                      <!-- <a
-                        href="tel:+919036055863"
-                        class="text-blue-900 xl:ml-4 xl:pt-1"
-                      >
-                        (+91 9036055863)</a
-                      > -->
                     </li>
                     <li class="font-semibold xl:my-3">
                       Priya Singh - 22BCAD49
@@ -751,12 +745,12 @@
                   class="flex justify-around xl:w-[30rem] xl:ml-16 items-center"
                 >
                   <button
-                    class="bg-gradient-to-r from-[#A93300] to-[#A90033] lg:w-48 lg:h-16 w-36 h-[3rem] rounded-xl text-xl font-semibold bottom-0"
+                    class=" lg:w-48 lg:h-16 w-36 h-[3rem] rounded-xl text-xl font-semibold bottom-0"
                   >
                     Register Now!
                   </button>
                   <button
-                    class="bg-gradient-to-r from-[#A93300] to-[#A90033] lg:w-48 lg:h-16 w-36 h-[3rem] rounded-xl text-xl font-semibold bottom-0"
+                    class=" lg:w-48 lg:h-16 w-36 h-[3rem] rounded-xl text-xl font-semibold bottom-0"
                     onclick="closeSynergia()"
                   >
                     Close
@@ -793,7 +787,7 @@
                   <div class="flex justify-center items-end">
                     <button
                       id="explore-more-button"
-                      class="bg-gradient-to-r from-[#A93300] to-[#A90033] px-9 py-3 my-4 rounded-full text-xl font-semibold absolute bottom-0"
+                      class=" px-9 py-3 my-4 rounded-full text-xl font-semibold absolute bottom-0"
                       onclick="openWeblynx()"
                     >
                       Explore More
@@ -814,9 +808,9 @@
                 <h2 class="text-2xl font-bold text-center p-4">
                   Guidelines for Weblynx:
                 </h2>
-                <div class="rounds my-1 bg-black p-4 bg-opacity-55 rounded-md">
-                  <p>Round 1: WebSankalp(MCQ)</p>
-                  <ul class="font-semibold pl-4 [list-style:circle]">
+                <div class="rounds my-1 p-4  rounded-md">
+                  <p class="font-semibold">Round 1: WebSankalp(MCQ)</p><br>
+                  <ul class=" pl-4 [list-style:circle]">
                     <li>
                       Participants will be given a set of MCQs based on basics
                       of HTML, CSS and JS.
@@ -830,8 +824,8 @@
                   </ul>
                 </div>
                 <div class="rounds my-1 p-4">
-                  <p>Round 2: WebShrishti</p>
-                  <ul class="font-semibold pl-4 [list-style:circle]">
+                  <p class="font-semibold">Round 2: WebShrishti</p><br>
+                  <ul class=" pl-4 [list-style:circle]">
                     <li>
                       In this round we will give participants a design of a
                       website which is in Desktop Size. They have to Develop the
@@ -844,8 +838,8 @@
                     <li>Top 10 will proceed to the next round.</li>
                   </ul>
                 </div>
-                <div class="rounds my-1 p-4 bg-black bg-opacity-55 rounded-md">
-                  <p>Final Round : WebKala</p>
+                <div class="rounds my-1 p-4 rounded-md">
+                  <p class="font-semibold">Final Round : WebKala</p><br>
                   <ul class="font-semibold pl-4 [list-style:circle]">
                     <li>
                       In this round , participants will be provided with a
@@ -903,12 +897,12 @@
                   class="flex justify-around xl:w-[30rem] xl:ml-16 items-center"
                 >
                   <button
-                    class="bg-gradient-to-r from-[#A93300] to-[#A90033] lg:w-48 lg:h-16 w-36 h-[3rem] rounded-xl text-xl font-semibold bottom-0"
+                    class="lg:w-48 lg:h-16 w-36 h-[3rem] rounded-xl text-xl font-semibold bottom-0"
                   >
                     Register Now!
                   </button>
                   <button
-                    class="bg-gradient-to-r from-[#A93300] to-[#A90033] lg:w-48 lg:h-16 w-36 h-[3rem] rounded-xl text-xl font-semibold bottom-0"
+                    class=" lg:w-48 lg:h-16 w-36 h-[3rem] rounded-xl text-xl font-semibold bottom-0"
                     onclick="closeWeblynx()"
                   >
                     Close
@@ -970,9 +964,9 @@
                 <h2 class="text-2xl font-bold text-center p-4">
                   Guidelines for ByteQuest:
                 </h2>
-                <div class="rounds my-1 bg-black p-4 bg-opacity-55 rounded-md">
-                  <p>Round 1: Drishti-Tech</p>
-                  <ul class="font-semibold pl-4 [list-style:circle]">
+                <div class="rounds my-1 p-4 rounded-md">
+                  <p class="font-semibold">Round 1: Drishti-Tech</p><br>
+                  <ul class=" pl-4 [list-style:circle]">
                     <li>
                       The round consists of MCQ questions which will cover areas
                       such as programming languages, software, hardware, tech
@@ -985,8 +979,8 @@
                   </ul>
                 </div>
                 <div class="rounds my-1 p-4">
-                  <p>Round 2: Vidya-Vaibhav</p>
-                  <ul class="font-semibold pl-4 [list-style:circle]">
+                  <p class="font-semibold">Round 2: Vidya-Vaibhav</p><br>
+                  <ul class=" pl-4 [list-style:circle]">
                     <li>
                       The participants should have to choose from the below
                       given domains. Each question is designed around a
@@ -1016,9 +1010,9 @@
                     </li>
                   </ul>
                 </div>
-                <div class="rounds my-1 p-4 bg-black bg-opacity-55 rounded-md">
-                  <p>Round 3: Gyaan-Kosh</p>
-                  <ul class="font-semibold pl-4 [list-style:circle]">
+                <div class="rounds my-1 p-4  rounded-md">
+                  <p class="font-semibold">Round 3: Gyaan-Kosh</p><br>
+                  <ul class="pl-4 [list-style:circle]">
                     <li>
                       A crossword puzzle of 15 words, the words/terms will be
                       related to modern-day technologies.
@@ -1038,8 +1032,8 @@
                   </ul>
                 </div>
                 <div class="rounds my-1 p-4 rounded-md">
-                  <p>Round 4: Chakravyuh</p>
-                  <ul class="font-semibold pl-4 [list-style:circle]">
+                  <p class="font-semibold">Round 4: Chakravyuh</p><br>
+                  <ul class=" pl-4 [list-style:circle]">
                     <li>
                       A buzzer round, consisting of various kinds of questions.
                       The question will be a high-level tech challenge or riddle
@@ -1085,12 +1079,12 @@
                   class="flex justify-around xl:w-[30rem] xl:ml-16 items-center"
                 >
                   <button
-                    class="bg-gradient-to-r from-[#A93300] to-[#A90033] lg:w-48 lg:h-16 w-36 h-[3rem] rounded-xl text-xl font-semibold bottom-0"
+                    class=" lg:w-48 lg:h-16 w-36 h-[3rem] rounded-xl text-xl font-semibold bottom-0"
                   >
                     Register Now!
                   </button>
                   <button
-                    class="bg-gradient-to-r from-[#A93300] to-[#A90033] lg:w-48 lg:h-16 w-36 h-[3rem] rounded-xl text-xl font-semibold bottom-0"
+                    class=" lg:w-48 lg:h-16 w-36 h-[3rem] rounded-xl text-xl font-semibold bottom-0"
                     onclick="closeByteQuest()"
                   >
                     Close
@@ -1127,7 +1121,7 @@
                   <div class="flex justify-center items-end">
                     <button
                       id="explore-more-button"
-                      class="bg-gradient-to-r from-[#A93300] to-[#A90033] px-9 py-3 my-4 rounded-full text-xl font-semibold absolute bottom-0"
+                      class=" px-9 py-3 my-4 rounded-full text-xl font-semibold absolute bottom-0"
                       onclick="openIOT()"
                     >
                       Explore More
@@ -1148,9 +1142,9 @@
                 <h2 class="text-2xl font-bold text-center p-4">
                   Guidelines for IOTize:
                 </h2>
-                <div class="rounds my-1 bg-black p-4 bg-opacity-55 rounded-md">
-                  <p>Round 1: Quiz</p>
-                  <ul class="font-semibold pl-4 [list-style:circle]">
+                <div class="rounds my-1 p-4 rounded-md">
+                  <p class="font-semibold">Round 1: Quiz</p><br>
+                  <ul class=" pl-4 [list-style:circle]">
                     <li>Individual participation.</li>
                     <li>
                       30-minute quiz with 20 MCQs on IoT basics, protocols,
@@ -1164,8 +1158,8 @@
                   </ul>
                 </div>
                 <div class="rounds my-1 p-4">
-                  <p>Round 2: Ideation</p>
-                  <ul class="font-semibold pl-4 [list-style:circle]">
+                  <p class="font-semibold">Round 2: Ideation</p>
+                  <ul class=" pl-4 [list-style:circle]">
                     <li>Form teams of 2 after Round 1 results.</li>
                     <li>
                       Teaming up with seniors or those with IoT experience is
@@ -1188,9 +1182,9 @@
                     <li>Top 5 teams advance to Round 3.</li>
                   </ul>
                 </div>
-                <div class="rounds my-1 p-4 bg-black bg-opacity-55 rounded-md">
-                  <p>Round 3: Implementation</p>
-                  <ul class="font-semibold pl-4 [list-style:circle]">
+                <div class="rounds my-1 p-4  rounded-md">
+                  <p  class="font-semibold">Round 3: Implementation</p><br>
+                  <ul class=" pl-4 [list-style:circle]">
                     <li>
                       Build a prototype based on the idea presented in Round 2.
                     </li>
@@ -1252,12 +1246,12 @@
                   class="flex justify-around xl:w-[30rem] xl:ml-16 items-center"
                 >
                   <button
-                    class="bg-gradient-to-r from-[#A93300] to-[#A90033] lg:w-48 lg:h-16 w-36 h-[3rem] rounded-xl text-xl font-semibold bottom-0"
+                    class=" lg:w-48 lg:h-16 w-36 h-[3rem] rounded-xl text-xl font-semibold bottom-0"
                   >
                     Register Now!
                   </button>
                   <button
-                    class="bg-gradient-to-r from-[#A93300] to-[#A90033] lg:w-48 lg:h-16 w-36 h-[3rem] rounded-xl text-xl font-semibold bottom-0"
+                    class=" lg:w-48 lg:h-16 w-36 h-[3rem] rounded-xl text-xl font-semibold bottom-0"
                     onclick="closeIOT()"
                   >
                     Close
@@ -1319,9 +1313,9 @@
                 <h2 class="text-3xl font-bold text-center p-4">
                   Guidelines for Inspira:
                 </h2>
-                <div class="rounds my-1 bg-black p-4 bg-opacity-55 rounded-md">
-                  <p class="round-heading italic">Round 1: Rapid Rhapsody</p>
-                  <ul class="font-semibold p-4 [list-style:circle]">
+                <div class="rounds my-1  p-4 rounded-md">
+                  <p class="font-semibold">Round 1: Rapid Rhapsody</p><br>
+                  <ul class=" p-4 [list-style:circle]">
                     <li>
                       Each team will randomly draw a topic that spans various
                       tech domains.
@@ -1349,8 +1343,8 @@
                   </ul>
                 </div>
                 <div class="rounds my-1 p-4">
-                  <p class="round-heading italic">Round 2: TechTales</p>
-                  <ul class="font-semibold p-4 [list-style:circle]">
+                  <p class="font-semibold">Round 2: TechTales</p><br>
+                  <ul class="p-4 [list-style:circle]">
                     <li>
                       Each team will randomly draw a technological concept and a
                       creative scenario through which they must explain
@@ -1367,9 +1361,9 @@
                     </li>
                   </ul>
                 </div>
-                <div class="rounds my-1 p-4 bg-black bg-opacity-55 rounded-md">
-                  <p class="round-heading italic">Round 3: Insta Twist</p>
-                  <ul class="font-semibold p-4 [list-style:circle]">
+                <div class="rounds my-1 p-4  rounded-md">
+                  <p class="font-semibold">Round 3: Insta Twist</p><br>
+                  <ul class="p-4 [list-style:circle]">
                     <li>
                       Each team will randomly draw a “twist” that they must
                       incorporate into their Instagram post. These twists could
@@ -1499,8 +1493,8 @@
                   Guidelines for Pixelate:
                 </h2>
                 <div class="rounds my-1 bg-black p-4 bg-opacity-55 rounded-md">
-                  <p class="round-heading italic">Prelims: Poster Designing</p>
-                  <ul class="font-semibold p-4 [list-style:circle]">
+                  <p class="font-semibold">Prelims: Poster Designing</p><br>
+                  <ul class="p-4 [list-style:circle]">
                     <li>
                       Participants will have to design a captivating poster
                       using Canva based on the topic provided.
@@ -1516,10 +1510,10 @@
                   </ul>
                 </div>
                 <div class="rounds my-1 p-4">
-                  <p class="round-heading italic">
+                  <p class="font-semibold">
                     Semi Finals: UI/UX Designing
-                  </p>
-                  <ul class="font-semibold p-4 [list-style:circle]">
+                  </p><br>
+                  <ul class="p-4 [list-style:circle]">
                     <li>
                       Participants will have to craft a user-friendly mobile app
                       design and a logo for the same using Figma and Canva
@@ -1535,11 +1529,11 @@
                     </li>
                   </ul>
                 </div>
-                <div class="rounds my-1 p-4 bg-black bg-opacity-55 rounded-md">
-                  <p class="round-heading italic">
+                <div class="rounds my-1 p-4  rounded-md">
+                  <p class="font-semibold">
                     Finals: Design Presentation
-                  </p>
-                  <ul class="font-semibold p-4 [list-style:circle]">
+                  </p><br>
+                  <ul class="p-4 [list-style:circle]">
                     <li>
                       Participants will have to present their final design to a
                       panel of judges through a PPT.
@@ -1584,21 +1578,9 @@
                   <ul class="p-3 xl:text-xl pl-0">
                     <li class="font-semibold xl:my-3">
                       K Vruttika - 22BCAA66
-                      <!-- <a
-                        href="tel:+918550890338"
-                        class="text-blue-900 xl:ml-4 xl:pt-1"
-                      >
-                        (+91 85508 90338)</a
-                      > -->
                     </li>
                     <li class="font-semibold xl:my-3">
                       Sabeena Kachary - 22BCAB54
-                      <!-- <a
-                        href="tel:+917086664622"
-                        class="text-blue-900 xl:ml-4 xl:pt-1"
-                      >
-                        (+91 70866 64622)</a
-                      > -->
                     </li>
                   </ul>
                 </div>
@@ -1671,9 +1653,9 @@
                 <h2 class="text-2xl font-bold text-center p-4">
                   Guidelines for Valorant:
                 </h2>
-                <div class="rounds my-1 bg-black p-4 bg-opacity-55 rounded-md">
-                  <p>Round 1</p>
-                  <ul class="font-semibold pl-4 [list-style:circle]">
+                <div class="rounds my-1  p-4 rounded-md">
+                  <p class="font-semibold">Round 1</p><br>
+                  <ul  pl-4 [list-style:circle]">
                     <li>
                       The matches will be played in a group match where each
                       team will get TWO matches to qualify for the next round.
@@ -1683,8 +1665,8 @@
                   </ul>
                 </div>
                 <div class="rounds my-1 p-4">
-                  <p>Round 2</p>
-                  <ul class="font-semibold pl-4 [list-style:circle]">
+                  <p class="font-semibold">Round 2</p><br>
+                  <ul class="pl-4 [list-style:circle]">
                     <li>
                       The next round will be the qualifying round to the finals.
                       There will be a set of knockout and decider matches played
@@ -1692,9 +1674,9 @@
                     </li>
                   </ul>
                 </div>
-                <div class="rounds my-1 p-4 bg-black bg-opacity-55 rounded-md">
-                  <p>Round 3</p>
-                  <ul class="font-semibold pl-4 [list-style:circle]">
+                <div class="rounds my-1 p-4 rounded-md">
+                  <p class="font-semibold">Round 3</p><br>
+                  <ul class=" pl-4 [list-style:circle]">
                     <li>
                       The last and final round will be the deciding match of the
                       winning team. It will be played on a best of 3 format.
@@ -1800,9 +1782,9 @@
                 <h2 class="text-2xl font-bold text-center p-4">
                   Guidelines for TechHunt:
                 </h2>
-                <div class="rounds my-1 bg-black p-4 bg-opacity-55 rounded-md">
-                  <p>Round 1: Crossword Clues</p>
-                  <ul class="font-semibold pl-4 [list-style:circle]">
+                <div class="rounds my-1 p-4  rounded-md">
+                  <p  class="font-semibold">Round 1: Crossword Clues</p><br>
+                  <ul class=" pl-4 [list-style:circle]">
                     <li>
                       Consists of crosswords, clues will be given related to the
                       theme and the team should guess the words and mark on the
@@ -1817,9 +1799,9 @@
                   </ul>
                 </div>
                 <div class="rounds my-1 p-4">
-                  <p>Final Round</p>
-                  <p>Sub-Round 1: Guess the emoji challenge</p>
-                  <ul class="font-semibold pl-4 [list-style:circle]">
+                  <p  class="font-semibold">Final Round</p><br>
+                  <p class="font-semibold">Sub-Round 1: Guess the emoji challenge</p><br>
+                  <ul class=" pl-4 [list-style:circle]">
                     <li>It's a group/team event consisting of 3 members.</li>
                     <li>
                       Participants will be getting emojis on the screen, and
@@ -1833,9 +1815,9 @@
                     <li>Head's decision will be Final.</li>
                   </ul>
                 </div>
-                <div class="rounds my-1 p-4 bg-black bg-opacity-55 rounded-md">
-                  <p>Sub-Round 2: Unlock the clue</p>
-                  <ul class="font-semibold pl-4 [list-style:circle]">
+                <div class="rounds my-1 p-4 rounded-md">
+                  <p class="font-semibold">Sub-Round 2: Unlock the clue</p><br>
+                  <ul class=" pl-4 [list-style:circle]">
                     <li>
                       Captain of the team will be getting a clue by TechHunt's
                       team to unravel the next clue and set themselves for the
@@ -1850,8 +1832,8 @@
                   </ul>
                 </div>
                 <div class="rounds my-1 p-4 rounded-md">
-                  <p>Sub-Round 3: Unveil the TREASURE!</p>
-                  <ul class="font-semibold pl-4 [list-style:circle]">
+                  <p class="font-semibold">Sub-Round 3: Unveil the TREASURE!</p><br>
+                  <ul class=" pl-4 [list-style:circle]">
                     <li>
                       Final clues will be given, find and claim the treasure.
                     </li>
@@ -1877,12 +1859,6 @@
                   <ul class="p-3 xl:text-xl pl-0">
                     <li class="font-semibold xl:my-3">
                       Hajira Sait - 22BCAA23
-                      <!-- <a
-                        href="tel:+918296206488"
-                        class="text-blue-900 xl:ml-4 xl:pt-1"
-                      >
-                        (+91 8296206488)</a
-                      > -->
                     </li>
                     <li class="font-semibold xl:my-3">
                       Fernandis Styris Francis - 22BCAA24
@@ -1970,9 +1946,9 @@
                 <h2 class="text-2xl font-bold text-center p-4">
                   Guidelines for Cinephoria:
                 </h2>
-                <div class="rounds my-1 bg-black p-4 bg-opacity-55 rounded-md">
-                  <p>Round 1: Video Editing Task</p>
-                  <ul class="font-semibold pl-4 [list-style:circle]">
+                <div class="rounds my-1  p-4rounded-md">
+                  <p class="font-semibold">Round 1: Video Editing Task</p><br>
+                  <ul class=" pl-4 [list-style:circle]">
                     <li>
                       Participants are required to bring their own laptops.
                     </li>
@@ -1996,8 +1972,8 @@
                   </ul>
                 </div>
                 <div class="rounds my-1 p-4">
-                  <p>Round 2: Filmmaking and Editing</p>
-                  <ul class="font-semibold pl-4 [list-style:circle]">
+                  <p class="font-semibold">Round 2: Filmmaking and Editing</p><br>
+                  <ul class="pl-4 [list-style:circle]">
                     <li>
                       Participants should always seek permission before filming
                       or photographing someone inside the campus.
@@ -2027,9 +2003,9 @@
                     </li>
                   </ul>
                 </div>
-                <div class="rounds my-1 p-4 bg-black bg-opacity-55 rounded-md">
-                  <p>Round 3: Cinematic Trailer Task</p>
-                  <ul class="font-semibold pl-4 [list-style:circle]">
+                <div class="rounds my-1 p-4  rounded-md">
+                  <p class="font-semibold">Round 3: Cinematic Trailer Task</p><br>
+                  <ul class="pl-4 [list-style:circle]">
                     <li>
                       The final trailer must be between 1 to 2 minutes in
                       length.
@@ -2106,6 +2082,18 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        <!-- Schedule -->
+        <div>
+
+          <h1
+            class="text-center text-4xl font-bold mt-5 text-[#A90033] lg:text-5xl my-4 underline" id="schedule"
+          >
+            Schedule
+          </h1>
+          <div class="flex justify-center my-4 ">
+            <img src="res/schedule.png" alt="" srcset="" class="lg:w-3/4 mt-9">
           </div>
         </div>
       </div>

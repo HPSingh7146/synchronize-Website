@@ -191,3 +191,9 @@ document.getElementById('event-link').addEventListener('click', function(event) 
   const eventSection = document.getElementById('event');
   eventSection.scrollIntoView({ behavior: 'smooth' });
 });
+
+document.getElementById('schedule-link').addEventListener('click', function(event) {
+  event.preventDefault();
+  const eventSection = document.getElementById('schedule');
+  eventSection.scrollIntoView({ behavior: 'smooth' });
+});
