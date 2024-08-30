@@ -54,7 +54,7 @@ button:hover {
 
   .popup-right{
     width: 46rem;
-    height: -webkit-fill-available;
+    height: 100%;
   }
 
   .popup-right > div {
