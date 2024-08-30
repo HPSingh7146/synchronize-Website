@@ -7,3 +7,7 @@
   background-color: rgb(147, 226, 147);
   transition: all 0.3s ease-in;
 }
+
+.pixelate{
+  box-shadow: 2px 2px 2px #dfdfdf;
+}
