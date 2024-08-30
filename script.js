@@ -184,3 +184,10 @@ function closeModal() {
 }
 
 
+// Scroll for nav menu
+
+document.getElementById('event-link').addEventListener('click', function(event) {
+  event.preventDefault();
+  const eventSection = document.getElementById('event');
+  eventSection.scrollIntoView({ behavior: 'smooth' });
+});
