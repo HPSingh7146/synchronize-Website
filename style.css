@@ -44,11 +44,12 @@ button:hover {
   }
 
   .popup-left > div {
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
+    padding-left: 0;
   }
 
   .popup-right{
-    width: 46rem;
+    width: 80%;
     height: 100%;
   }
 
@@ -57,6 +58,10 @@ button:hover {
     height: 100%;
     width: 100%;
     max-height: none;
+  }
+
+  .popup-logo {
+    width: 70%;
   }
   
 
