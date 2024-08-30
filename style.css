@@ -33,7 +33,10 @@ button:hover {
     width: 60%;
     height: 60%;
     padding: 0 !important;
+    max-height: 100% !important;
   }
+
+
   
   .popup-content {
     width: 35rem;
@@ -51,11 +54,12 @@ button:hover {
 
   .popup-right{
     width: 46rem;
+    height: -webkit-fill-available;
   }
 
   .popup-right > div {
     margin: 0;
-    height: 36rem;
+    height: 100%;
     width: 100%;
     max-height: none;
   }
