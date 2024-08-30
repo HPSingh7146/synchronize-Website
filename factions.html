@@ -15,7 +15,7 @@
     <div class="p-4">
         <h1 class="text-center text-3xl font-bold p-4">Find your Faction!</h1>
 
-        <form action="" class="mt-4 bg-slate-700 p-4 rounded-md">
+        <form action="" onsubmit="return false;" class="mt-4 bg-slate-700 p-4 rounded-md">
             <label for="roll">Enter your roll number: </label>
             <input type="text" name="roll" id="rollnumber" class="border-2 rounded-md w-full" style="color: black;">
     
@@ -36,6 +36,15 @@
         // Modular imports
         import { db } from './MyConfig.js';
         import { doc, getDoc } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore.js";
+
+        const factionLinks = {
+            "TechBrigade": "https://chat.whatsapp.com/K6SIA41y9Hu3st7xpVg6qN",
+            "TechVinzo": "https://chat.whatsapp.com/EArijVriU93FauMqSOPySJ",
+            "TechHaven": "https://chat.whatsapp.com/CgWdcNAFd8b06Lw0kY9kVS",
+            "SiliconDawgs": "https://chat.whatsapp.com/Dh3NGZDGgRWKjLeCyNVin3",
+            "TechnoMystics": "https://chat.whatsapp.com/IH0EgLOPkwsLIEhwMZiQZz",
+            "SynchroForge": "https://chat.whatsapp.com/LJLBM1u8S39LaAjabKSqYV"
+        };
 
         document.getElementById('fetchDetailsBtn').addEventListener('click', async () => {
             // Get the rollno from the textbox
@@ -58,7 +67,18 @@
                     const name = docSnap.data()[rollNumber];
                     document.getElementById('fetchedName').textContent = name;
                     document.getElementById('fetchedFaction').textContent = faction;
-                    document.getElementById('whatsapplink').disabled = false;
+                    
+                    // Fetch link from collection
+                    let whatsAppLink = factionLinks[faction];
+                    // console.log(whatsAppLink)
+                    const whatsappButton = document.getElementById('whatsapplink');
+                    whatsappButton.disabled = false;
+                    
+                    // Click handler to dynamically send users to the right faction group link
+                    whatsappButton.onclick = () => {
+                        window.open(whatsAppLink, '_blank');
+                    };
+                    
                     document.getElementById('whatsapplink').classList.add("active")
                     found = true;
                     break;
@@ -71,6 +91,8 @@
                 document.getElementById('fetchedName').textContent = "";
                 document.getElementById('fetchedFaction').textContent = "";
                 document.getElementById('whatsapplink').disabled = true;
+                document.getElementById('whatsapplink').href = "";
+                // Clear any links if rollno not found
                 document.getElementById('whatsapplink').classList.remove("active")
             }
         });
