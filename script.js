@@ -1,6 +1,6 @@
 // Define the array of images
 const images = [
-  './res/slide/1.png',
+  // './res/slide/1.png',
   './res/logos/agora.png',
   './res/logos/bytequest.png',
   './res/logos/codeverse.png',
@@ -9,9 +9,9 @@ const images = [
   './res/logos/pixelate.png',
   './res/logos/synergia.png',
   './res/logos/valorant.png',
-  './res/slide/5.png',
-  './res/slide/11.png',
-  './res/slide/12.jpg',
+  // './res/slide/5.png',
+  // './res/slide/11.png',
+  // './res/slide/12.jpg',
 ];
 
 // Get the img element
