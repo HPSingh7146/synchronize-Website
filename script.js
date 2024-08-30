@@ -1,42 +1,42 @@
 // Define the array of images
-const images = [
-  // './res/slide/1.png',
-  './res/logos/agora.png',
-  './res/logos/bytequest.png',
-  './res/logos/codeverse.png',
-  './res/logos/inspira.png',
-  './res/logos/iotize.png',
-  './res/logos/pixelate.png',
-  './res/logos/synergia.png',
-  './res/logos/valorant.png',
-  // './res/slide/5.png',
-  // './res/slide/11.png',
-  // './res/slide/12.jpg',
-];
+// const images = [
+//   // './res/slide/1.png',
+//   './res/logos/agora.png',
+//   './res/logos/bytequest.png',
+//   './res/logos/codeverse.png',
+//   './res/logos/inspira.png',
+//   './res/logos/iotize.png',
+//   './res/logos/pixelate.png',
+//   './res/logos/synergia.png',
+//   './res/logos/valorant.png',
+//   // './res/slide/5.png',
+//   // './res/slide/11.png',
+//   // './res/slide/12.jpg',
+// ];
 
-// Get the img element
-const imgElement = document.getElementById('myImage');
+// // Get the img element
+// const imgElement = document.getElementById('myImage');
 
-// Initialize the current image index
-let currentIndex = 0;
+// // Initialize the current image index
+// let currentIndex = 0;
 
-// Set the initial image
-imgElement.src = images[currentIndex];
+// // Set the initial image
+// imgElement.src = images[currentIndex];
 
-console.log('Initial image:', imgElement.src);
+// console.log('Initial image:', imgElement.src);
 
-// Set the interval to change the image every 5 seconds
-setInterval(() => {
-  // Increment the current image index
-  currentIndex = (currentIndex + 1) % images.length;
+// // Set the interval to change the image every 5 seconds
+// setInterval(() => {
+//   // Increment the current image index
+//   currentIndex = (currentIndex + 1) % images.length;
 
-  console.log('Current index:', currentIndex);
+//   console.log('Current index:', currentIndex);
 
-  // Set the next image
-  imgElement.src = images[currentIndex];
+//   // Set the next image
+//   imgElement.src = images[currentIndex];
 
-  console.log('Next image:', imgElement.src);
-}, 5000);
+//   console.log('Next image:', imgElement.src);
+// }, 5000);
 
 
 
