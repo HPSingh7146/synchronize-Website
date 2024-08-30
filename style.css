@@ -41,6 +41,7 @@ button:hover {
   .popup-left {
     flex-direction: column !important;
     margin: 0;
+    max-height: 100%
   }
 
   .popup-left > div {
@@ -62,6 +63,7 @@ button:hover {
 
   .popup-logo {
     width: 70%;
+    margin-bottom: 0 !important;
   }
   
 
