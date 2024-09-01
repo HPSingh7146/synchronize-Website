@@ -56,7 +56,7 @@
 
         document.getElementById('fetchDetailsBtn').addEventListener('click', async () => {
             // Get the rollno from the textbox
-            const rollNumber = document.getElementById('rollnumber').value.trim();
+            const rollNumber = document.getElementById('rollnumber').value.trim().toUpperCase();
             if (!rollNumber) {
                 alert("Please enter a roll number");
                 return;
