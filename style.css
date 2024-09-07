@@ -1,12 +1,12 @@
 button {
   background: none !important;
-  border: white 2px solid !important;
+  border: white 3px solid !important;
   transition: 0.5s ease-in-out;
 }
 
 button:hover {
-  background-color: red !important;
   transform: scale(1.05);
+  background-image: linear-gradient(to right, #4B000F, #2E2E2E) !important;
 }
 
 .whatsapplink .active{
@@ -16,6 +16,29 @@ button:hover {
 
 .pixelate{
   box-shadow: 2px 2px 2px #dfdfdf;
+}
+
+
+.navbar {
+  background-color: #bd0202;
+  position: fixed;
+  border-radius: 20px;
+  top: 1.5%;
+  right: 1%;
+  z-index: 100;
+  padding: 0 !important;
+  height: 3rem;
+  width: 98%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: white;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+
 }
 
 @media screen and (min-width: 1280px){

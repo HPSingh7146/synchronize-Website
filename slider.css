@@ -19,6 +19,11 @@
     height: 100%;
     object-fit: cover;
 }
+.slider .list .item video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 .slider .list .item .content{
     position: absolute;
     top: 20%;
@@ -78,7 +83,7 @@
     bottom: 50px;
     left: 50%;
     width: max-content;
-    z-index: 100;
+    z-index: 90;
     display: flex;
     gap: 20px;
 }
@@ -98,6 +103,13 @@
     box-shadow: 5px 0 15px rgba(0, 0, 0, 0.3);
 }
 
+.thumbnail .item video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.3);
+}
 
 /* nextPrevArrows Section  */
 .nextPrevArrows{

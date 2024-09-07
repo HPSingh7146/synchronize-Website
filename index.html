@@ -26,13 +26,13 @@
         </div>
         <!-- home area -->
         <div
-          class="relative flex p-3 font-semibold text-lg sm:hidden justify-between items-center"
+          class="navbar sm:hidden bg-gradient-to-r from-[#4B000F] to-[#2E2E2E] "
           id="navcont"
         >
-          <div class="logo flex items-center pt-[.4rem] pl-[.5rem]">
+          <div class="logo flex items-center pt-[0rem] pl-[.7rem]">
             <img src="res/logos/synchronize.png" alt="" class="w-40 z-20" />
           </div>
-          <div class="w-8 h-8 absolute top-4 right-7 z-20" id="menu">
+          <div class="w-8 h-8 absolute  right-7 z-20" id="menu">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -49,7 +49,7 @@
             </svg>
           </div>
           <div
-            class="absolute top-0 right-[100%] transform -translate-x-1/2 sm:hidden pt-16 bg-gradient-to-r from-[#4B000F] to-[#2E2E2E] w-full transition-all rounded-b-lg"
+            class="absolute top-0 right-[100%] transform -translate-x-1/2 sm:hidden pt-16 bg-gradient-to-r from-[#4B000F] to-[#2E2E2E] w-full transition-all rounded-2xl"
             id="nav"
           >
             <nav class="flex flex-col items-center font-semibold">
@@ -59,16 +59,16 @@
             </nav>
           </div>
         </div>
-        <div class="hidden sm:flex relative p-4 font-semibold text-lg justify-center items-center">
+        <div class="navbar hidden sm:flex font-medium justify-center items-center bg-gradient-to-r from-[#4B000F] to-[#2E2E2E]">
           <nav class="flex justify-between">
             <a class="group lg:text-2xl mr-8" href="#home">Home
-              <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-[#A90033]"></span>
+              <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-[3px] bg-[#b32121]"></span>
             </a>
             <a class="group lg:text-2xl mr-8" href="#event" id="event-link">Event
-              <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-[#A90033]"></span>
+              <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-[3px] bg-[#b32121]"></span>
             </a>
             <a class="group lg:text-2xl mr-8" href="#schedule" id="schedule-link">Schedule
-              <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-[#A90033]"></span>
+              <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-[3px] bg-[#b32121]"></span>
             </a>
           </nav>
         </div>
@@ -106,7 +106,7 @@
         <!-- event area -->
         <div class="text-center my-5" id="event">
           <h1
-            class="text-center text-4xl font-bold mt-5 text-[#A90033] lg:text-5xl"
+            class="text-center text-4xl text-red-900 font-bold mt-5 lg:text-5xl  "
           >
             Events
           </h1>
@@ -135,7 +135,7 @@
                 </div>
                 <!-- Card Back -->
                 <div
-                  class="absolute top-0 text-sm left-0 w-full h-full bg-[#490c0c] rounded-xl p-4 back [transform:rotateY(180deg)] [backface-visibility:hidden] inset-0"
+                  class="absolute top-0 text-sm left-0 w-full h-full bg-gradient-to-br from-[#4B000F] to-[#2E2E2E] rounded-xl p-4 back [transform:rotateY(180deg)] [backface-visibility:hidden] inset-0"
                 >
                   <h1 class="text-3xl font-bold my-2">IT Manager</h1>
                   <p class="text-base my-2">
@@ -162,13 +162,13 @@
               </div>
             </div>
             <div
-              class="popup fixed top-1/2 -left-full -translate-x-1/2 -translate-y-1/2 z-10 max-h-[90%] w-[95%] xl:w-[70%] rounded-lg bg-[#490c0c] transition-all duration-500 items-center p-3"
+              class="popup fixed top-1/2 -left-full -translate-x-1/2 -translate-y-1/2 z-10 max-h-[90%] w-[95%] xl:w-[70%] rounded-lg bg-gradient-to-br from-[#4B000F] to-[#2E2E2E] transition-all duration-500 items-center p-3"
               id="popup"
             >
             
               <div class="guidelines flex justify-center items-center popup-right">
                 <div
-                  class="popup-content z-30 overflow-y-scroll max-h-[30rem] bg-black bg-opacity-85 xl:w-3/5 xl:m-11 rounded-xl"
+                  class="popup-content z-30 overflow-y-scroll max-h-[30rem] bg-black bg-opacity-60 xl:rounded-l-none xl:w-3/5 xl:m-11 rounded-xl "
                 >
                   <!-- your popup content here -->
                   <h2 class="text-2xl font-bold text-center p-4">
@@ -292,7 +292,7 @@
                 </div>
                 <!-- Card Back -->
                 <div
-                  class="absolute top-0 text-sm left-0 w-full h-full bg-[#490c0c] rounded-xl p-4 back [transform:rotateY(180deg)] [backface-visibility:hidden] inset-0"
+                  class="absolute top-0 text-sm left-0 w-full h-full bg-gradient-to-br from-[#4B000F] to-[#2E2E2E] rounded-xl p-4 back [transform:rotateY(180deg)] [backface-visibility:hidden] inset-0"
                 >
                   <h1 class="text-3xl font-bold my-2">Agora</h1>
                   <p class="text-base my-2">
@@ -318,12 +318,12 @@
               </div>
             </div>
             <div
-              class="popup fixed top-1/2 -left-full -translate-x-1/2 -translate-y-1/2 z-10 max-h-[90%] w-[95%] xl:w-[70%] rounded-lg bg-[#490c0c] transition-all duration-500 items-center p-3"
+              class="popup fixed top-1/2 -left-full -translate-x-1/2 -translate-y-1/2 z-10 max-h-[90%] w-[95%] xl:w-[70%] rounded-lg bg-gradient-to-br from-[#4B000F] to-[#2E2E2E] transition-all duration-500 items-center p-3"
               id="popup-Agora"
             >
               <div class="flex justify-center items-center popup-right">
                 <div
-                  class="popup-content z-30 overflow-y-scroll max-h-[30rem] bg-black bg-opacity-85 xl:w-3/5 xl:m-11 rounded-xl"
+                  class="popup-content z-30 overflow-y-scroll max-h-[30rem] bg-black bg-opacity-60 xl:rounded-l-none xl:w-3/5 xl:m-11 rounded-xl"
                 >
                   <!-- your popup content here -->
                   <h2 class="text-2xl font-bold text-center p-4">
@@ -452,7 +452,7 @@
                 </div>
                 <!-- Card Back -->
                 <div
-                  class="absolute top-0 text-sm left-0 w-full h-full bg-[#490c0c] rounded-xl p-4 back [transform:rotateY(180deg)] [backface-visibility:hidden] inset-0"
+                  class="absolute top-0 text-sm left-0 w-full h-full bg-gradient-to-br from-[#4B000F] to-[#2E2E2E] rounded-xl p-4 back [transform:rotateY(180deg)] [backface-visibility:hidden] inset-0"
                 >
                   <h1 class="text-3xl font-bold my-2">CodeVerse</h1>
                   <p class="text-base my-2">
@@ -478,19 +478,19 @@
               </div>
             </div>
             <div
-              class="popup fixed top-1/2 -left-full -translate-x-1/2 -translate-y-1/2 z-10 max-h-[90%] w-[95%] xl:w-[70%] rounded-lg bg-[#490c0c] transition-all duration-500 items-center p-3"
+              class="popup fixed top-1/2 -left-full -translate-x-1/2 -translate-y-1/2 z-10 max-h-[90%] w-[95%] xl:w-[70%] rounded-lg bg-gradient-to-br from-[#4B000F] to-[#2E2E2E] transition-all duration-500 items-center p-3"
               id="popup-CodeVerse"
             >
               <div class="flex justify-center items-center popup-right">
                 <div
-                  class="popup-content z-30 overflow-y-scroll max-h-[30rem] bg-black bg-opacity-85 xl:w-3/5 xl:m-11 rounded-xl"
+                  class="popup-content z-30 overflow-y-scroll max-h-[30rem] bg-black bg-opacity-60 xl:rounded-l-none xl:w-3/5 xl:m-11 rounded-xl"
                 >
                   <!-- your popup content here -->
                   <h2 class="text-2xl font-bold text-center p-4">
                     Guidelines
                   </h2>
                   <div
-                    class="rounds my-1 bg-black p-4 bg-opacity-55 rounded-md"
+                    class="rounds my-1 p-4 rounded-md"
                   >
                     <p class="font-semibold">Round 1 (Preliminary):</p><br>
                     <ul class=" pl-4 [list-style:circle]">
@@ -619,7 +619,7 @@
                 </div>
                 <!-- Card Back -->
                 <div
-                  class="absolute top-0 text-sm left-0 w-full h-full bg-[#490c0c] rounded-xl p-4 back [transform:rotateY(180deg)] [backface-visibility:hidden] inset-0"
+                  class="absolute top-0 text-sm left-0 w-full h-full bg-gradient-to-br from-[#4B000F] to-[#2E2E2E] rounded-xl p-4 back [transform:rotateY(180deg)] [backface-visibility:hidden] inset-0"
                 >
                   <h1 class="text-3xl font-bold my-2">Synergia</h1>
                   <p class="text-base my-2">
@@ -643,12 +643,12 @@
               </div>
             </div>
             <div
-              class="popup fixed top-1/2 -left-full -translate-x-1/2 -translate-y-1/2 z-10 max-h-[90%] w-[95%] xl:w-[70%] rounded-lg bg-[#490c0c] transition-all duration-500 items-center p-3"
+              class="popup fixed top-1/2 -left-full -translate-x-1/2 -translate-y-1/2 z-10 max-h-[90%] w-[95%] xl:w-[70%] rounded-lg bg-gradient-to-br from-[#4B000F] to-[#2E2E2E] transition-all duration-500 items-center p-3"
               id="popup-Synergia"
             >
               <div class="flex justify-center items-center popup-right">
                 <div
-                  class="popup-content z-30 overflow-y-scroll max-h-[30rem] bg-black bg-opacity-85 xl:w-3/5 xl:m-11 rounded-xl"
+                  class="popup-content z-30 overflow-y-scroll max-h-[30rem] bg-black bg-opacity-60 xl:rounded-l-none xl:w-3/5 xl:m-11 rounded-xl"
                 >
                   <!-- your popup content here -->
                   <h2 class="text-2xl font-bold text-center p-4">
@@ -777,7 +777,7 @@
                 </div>
                 <!-- Card Back -->
                 <div
-                  class="absolute top-0 text-sm left-0 w-full h-full bg-[#490c0c] rounded-xl p-4 back [transform:rotateY(180deg)] [backface-visibility:hidden] inset-0"
+                  class="absolute top-0 text-sm left-0 w-full h-full bg-gradient-to-br from-[#4B000F] to-[#2E2E2E] rounded-xl p-4 back [transform:rotateY(180deg)] [backface-visibility:hidden] inset-0"
                 >
                   <h1 class="text-3xl font-bold my-2">Weblynx</h1>
                   <p class="text-base my-2">Where Creativity meets Code!</p>
@@ -798,12 +798,12 @@
               </div>
             </div>
             <div
-              class="popup fixed top-1/2 -left-full -translate-x-1/2 -translate-y-1/2 z-10 max-h-[90%] w-[95%] xl:w-[70%] rounded-lg bg-[#490c0c] transition-all duration-500 items-center p-3"
+              class="popup fixed top-1/2 -left-full -translate-x-1/2 -translate-y-1/2 z-10 max-h-[90%] w-[95%] xl:w-[70%] rounded-lg bg-gradient-to-br from-[#4B000F] to-[#2E2E2E] transition-all duration-500 items-center p-3"
               id="popup-Weblynx"
             >
             <div class="flex justify-center items-center popup-right">
               <div
-                class="popup-content z-30 overflow-y-scroll max-h-[30rem] bg-black bg-opacity-85 xl:w-3/5 xl:m-11 rounded-xl"
+                class="popup-content z-30 overflow-y-scroll max-h-[30rem] bg-black bg-opacity-60 xl:rounded-l-none xl:w-3/5 xl:m-11 rounded-xl"
               >
                 <!-- your popup content here -->
                 <h2 class="text-2xl font-bold text-center p-4">
@@ -930,7 +930,7 @@
                 </div>
                 <!-- Card Back -->
                 <div
-                  class="text-sm absolute top-0 left-0 w-full h-full bg-[#490c0c] rounded-xl p-4 back [transform:rotateY(180deg)] [backface-visibility:hidden] inset-0"
+                  class="text-sm absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[#4B000F] to-[#2E2E2E] rounded-xl p-4 back [transform:rotateY(180deg)] [backface-visibility:hidden] inset-0"
                 >
                   <h1 class="text-3xl font-bold my-2">ByteQuest</h1>
                   <p class="text-base my-2">
@@ -955,12 +955,12 @@
               </div>
             </div>
             <div
-              class="popup fixed top-1/2 -left-full -translate-x-1/2 -translate-y-1/2 z-10 max-h-[90%] w-[95%] xl:w-[70%] rounded-lg bg-[#490c0c] transition-all duration-500 items-center p-3"
+              class="popup fixed top-1/2 -left-full -translate-x-1/2 -translate-y-1/2 z-10 max-h-[90%] w-[95%] xl:w-[70%] rounded-lg bg-gradient-to-br from-[#4B000F] to-[#2E2E2E] transition-all duration-500 items-center p-3"
               id="popup-ByteQuest"
             >
             <div class="flex justify-center items-center popup-right">
               <div
-                class="popup-content z-30 overflow-y-scroll max-h-[30rem] bg-black bg-opacity-85 xl:w-3/5 xl:m-11 rounded-xl"
+                class="popup-content z-30 overflow-y-scroll max-h-[30rem] bg-black bg-opacity-60 xl:rounded-l-none xl:w-3/5 xl:m-11 rounded-xl"
               >
                 <!-- your popup content here -->
                 <h2 class="text-2xl font-bold text-center p-4">
@@ -1113,7 +1113,7 @@
                 </div>
                 <!-- Card Back -->
                 <div
-                  class="text-sm absolute top-0 left-0 w-full h-full bg-[#490c0c] rounded-xl p-4 back [transform:rotateY(180deg)] [backface-visibility:hidden] inset-0"
+                  class="text-sm absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[#4B000F] to-[#2E2E2E] rounded-xl p-4 back [transform:rotateY(180deg)] [backface-visibility:hidden] inset-0"
                 >
                   <h1 class="text-3xl font-bold my-2">IoTize</h1>
                   <p class="text-base my-2">
@@ -1134,12 +1134,12 @@
               </div>
             </div>
             <div
-              class="popup fixed top-1/2 -left-full -translate-x-1/2 -translate-y-1/2 z-10 max-h-[90%] w-[95%] xl:w-[70%] rounded-lg bg-[#490c0c] transition-all duration-500 items-center p-3"
+              class="popup fixed top-1/2 -left-full -translate-x-1/2 -translate-y-1/2 z-10 max-h-[90%] w-[95%] xl:w-[70%] rounded-lg bg-gradient-to-br from-[#4B000F] to-[#2E2E2E] transition-all duration-500 items-center p-3"
               id="popup-IOT"
             >
             <div class="flex justify-center items-center popup-right">
               <div
-                class="popup-content z-30 overflow-y-scroll max-h-[30rem] bg-black bg-opacity-85 xl:w-3/5 xl:m-11 rounded-xl"
+                class="popup-content z-30 overflow-y-scroll max-h-[30rem] bg-black bg-opacity-60 xl:rounded-l-none xl:w-3/5 xl:m-11 rounded-xl"
               >
                 <!-- your popup content here -->
                 <h2 class="text-2xl font-bold text-center p-4">
@@ -1279,7 +1279,7 @@
                 </div>
                 <!-- Card Back -->
                 <div
-                  class=" text-sm absolute top-0 left-0 w-full h-full bg-[#490c0c] rounded-xl p-4 back [transform:rotateY(180deg)] [backface-visibility:hidden] inset-0"
+                  class=" text-sm absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[#4B000F] to-[#2E2E2E] rounded-xl p-4 back [transform:rotateY(180deg)] [backface-visibility:hidden] inset-0"
                 >
                   <h1 class="text-3xl font-bold my-2">Inspira</h1>
                   <p class="text-base my-2">
@@ -1303,12 +1303,12 @@
               </div>
             </div>
             <div
-              class="popup fixed top-1/2 -left-full -translate-x-1/2 -translate-y-1/2 z-10 max-h-[90%] w-[95%] xl:w-[70%] rounded-lg bg-[#490c0c] transition-all duration-500 items-center p-3"
+              class="popup fixed top-1/2 -left-full -translate-x-1/2 -translate-y-1/2 z-10 max-h-[90%] w-[95%] xl:w-[70%] rounded-lg bg-gradient-to-br from-[#4B000F] to-[#2E2E2E] transition-all duration-500 items-center p-3"
               id="popup-Inspira"
             >
             <div class="flex justify-center items-center popup-right">
               <div
-                class="popup-content z-30 overflow-y-scroll max-h-[30rem] bg-black bg-opacity-85 xl:w-3/5 xl:m-11 rounded-xl"
+                class="popup-content z-30 overflow-y-scroll max-h-[30rem] bg-black bg-opacity-60 xl:rounded-l-none xl:w-3/5 xl:m-11 rounded-xl"
               >
                 <!-- your popup content here -->
                 <h2 class="text-3xl font-bold text-center p-4">
@@ -1460,7 +1460,7 @@
                 </div>
                 <!-- Card Back -->
                 <div
-                  class="text-sm absolute top-0 left-0 w-full h-full bg-[#490c0c] rounded-xl p-4 back [transform:rotateY(180deg)] [backface-visibility:hidden] inset-0"
+                  class="text-sm absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[#4B000F] to-[#2E2E2E] rounded-xl p-4 back [transform:rotateY(180deg)] [backface-visibility:hidden] inset-0"
                 >
                   <h1 class="text-3xl font-bold my-2">Pixelate</h1>
                   <p class="text-base my-2">
@@ -1483,18 +1483,18 @@
               </div>
             </div>
             <div
-              class="popup fixed top-1/2 -left-full -translate-x-1/2 -translate-y-1/2 z-10 max-h-[90%] w-[95%] xl:w-[70%] rounded-lg bg-[#490c0c] transition-all duration-500 items-center p-3"
+              class="popup fixed top-1/2 -left-full -translate-x-1/2 -translate-y-1/2 z-10 max-h-[90%] w-[95%] xl:w-[70%] rounded-lg bg-gradient-to-br from-[#4B000F] to-[#2E2E2E] transition-all duration-500 items-center p-3"
               id="popup-Px"
             >
             <div class="flex justify-center items-center popup-right">
               <div
-                class="popup-content z-30 overflow-y-scroll max-h-[30rem] bg-black bg-opacity-85 xl:w-3/5 xl:m-11 rounded-xl"
+                class="popup-content z-30 overflow-y-scroll max-h-[30rem] bg-black bg-opacity-60 xl:rounded-l-none xl:w-3/5 xl:m-11 rounded-xl"
               >
                 <!-- your popup content here -->
                 <h2 class="text-3xl font-bold text-center p-4">
                   Guidelines 
                 </h2>
-                <div class="rounds my-1 bg-black p-4 bg-opacity-55 rounded-md">
+                <div class="rounds my-1 p-4 rounded-md">
                   <p class="font-semibold">Prelims: Poster Designing</p><br>
                   <ul class="p-4 [list-style:circle]">
                     <li>
@@ -1628,7 +1628,7 @@
                 </div>
                 <!-- Card Back -->
                 <div
-                  class="text-sm absolute top-0 left-0 w-full h-full bg-[#490c0c] rounded-xl p-4 back [transform:rotateY(180deg)] [backface-visibility:hidden] inset-0"
+                  class="text-sm absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[#4B000F] to-[#2E2E2E] rounded-xl p-4 back [transform:rotateY(180deg)] [backface-visibility:hidden] inset-0"
                 >
                   <h1 class="text-3xl font-bold my-2">Valorant</h1>
                   <p class="text-base my-2"> Where Valor and Skills collide!</p>
@@ -1650,12 +1650,12 @@
               </div>
             </div>
             <div
-              class="popup fixed top-1/2 -left-full -translate-x-1/2 -translate-y-1/2 z-10 max-h-[90%] w-[95%] xl:w-[70%] rounded-lg bg-[#490c0c] transition-all duration-500 items-center p-3"
+              class="popup fixed top-1/2 -left-full -translate-x-1/2 -translate-y-1/2 z-10 max-h-[90%] w-[95%] xl:w-[70%] rounded-lg bg-gradient-to-br from-[#4B000F] to-[#2E2E2E] transition-all duration-500 items-center p-3"
               id="popup-Val"
             >
             <div class="flex justify-center items-center popup-right">
               <div
-                class="popup-content z-30 overflow-y-scroll max-h-[30rem] bg-black bg-opacity-85 xl:w-3/5 xl:m-11 rounded-xl"
+                class="popup-content z-30 overflow-y-scroll max-h-[30rem] bg-black bg-opacity-60 xl:rounded-l-none xl:w-3/5 xl:m-11 rounded-xl"
               >
                 <!-- your popup content here -->
                 <h2 class="text-2xl font-bold text-center p-4">
@@ -1760,7 +1760,7 @@
                 </div>
                 <!-- Card Back -->
                 <div
-                  class="text-sm absolute top-0 left-0 w-full h-full bg-[#490c0c] rounded-xl p-4 back [transform:rotateY(180deg)] [backface-visibility:hidden] inset-0"
+                  class="text-sm absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[#4B000F] to-[#2E2E2E] rounded-xl p-4 back [transform:rotateY(180deg)] [backface-visibility:hidden] inset-0"
                 >
                   <h1 class="text-3xl font-bold my-2">TechHunt</h1>
                   <p class="text-lg my-2 font-semibold">Unravel the clues, claim the treasure!</p>
@@ -1781,12 +1781,12 @@
               </div>
             </div>
             <div
-              class="popup fixed top-1/2 -left-full -translate-x-1/2 -translate-y-1/2 z-10 max-h-[90%] w-[95%] xl:w-[70%] rounded-lg bg-[#490c0c] transition-all duration-500 items-center p-3"
+              class="popup fixed top-1/2 -left-full -translate-x-1/2 -translate-y-1/2 z-10 max-h-[90%] w-[95%] xl:w-[70%] rounded-lg bg-gradient-to-br from-[#4B000F] to-[#2E2E2E] transition-all duration-500 items-center p-3"
               id="popup-TechHunt"
             >
             <div class="flex justify-center items-center popup-right">
               <div
-                class="popup-content z-30 overflow-y-scroll max-h-[30rem] bg-black bg-opacity-85 xl:w-3/5 xl:m-11 rounded-xl"
+                class="popup-content z-30 overflow-y-scroll max-h-[30rem] bg-black bg-opacity-60 xl:rounded-l-none xl:w-3/5 xl:m-11 rounded-xl"
               >
                 <!-- your popup content here -->
                 <h2 class="text-2xl font-bold text-center p-4">
@@ -1919,7 +1919,7 @@
                 </div>
                 <!-- Card Back -->
                 <div
-                  class="text-sm absolute top-0 left-0 w-full h-full bg-[#490c0c] rounded-xl p-4 back [transform:rotateY(180deg)] [backface-visibility:hidden] inset-0"
+                  class="text-sm absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[#4B000F] to-[#2E2E2E] rounded-xl p-4 back [transform:rotateY(180deg)] [backface-visibility:hidden] inset-0"
                 >
                   <h1 class="text-3xl font-bold my-2">Cinephoria</h1>
                   <p class="text-base my-2">
@@ -1945,12 +1945,12 @@ and filmmaking skills.
               </div>
             </div>
             <div
-              class="popup fixed top-1/2 -left-full -translate-x-1/2 -translate-y-1/2 z-10 max-h-[90%] w-[95%] xl:w-[70%] rounded-lg bg-[#490c0c] transition-all duration-500 items-center p-3"
+              class="popup fixed top-1/2 -left-full -translate-x-1/2 -translate-y-1/2 z-10 max-h-[90%] w-[95%] xl:w-[70%] rounded-lg bg-gradient-to-br from-[#4B000F] to-[#2E2E2E] transition-all duration-500 items-center p-3"
               id="popup-Vid"
             >
             <div class="flex justify-center items-center popup-right">
               <div
-                class="popup-content z-30 overflow-y-scroll max-h-[30rem] bg-black bg-opacity-85 xl:w-3/5 xl:m-11 rounded-xl"
+                class="popup-content z-30 overflow-y-scroll max-h-[30rem] bg-black bg-opacity-60 xl:rounded-l-none xl:w-3/5 xl:m-11 rounded-xl"
               >
                 <!-- your popup content here -->
                 <h2 class="text-2xl font-bold text-center p-4">
@@ -2091,10 +2091,10 @@ and filmmaking skills.
           </div>
         </div>
         <!-- image Gallery -->
-        <h1
-            class="text-center text-4xl font-bold mt-5 text-red-800 lg:text-5xl my-4 underline" id="schedule"
+        <!-- <h1
+            class="text-center text-4xl font-bold mt-5 text-red-800 lg:text-5xl my-4 underline" 
           >
-          <!-- text -->
+          
           </h1>
 
         <div class="slider">
@@ -2148,18 +2148,11 @@ and filmmaking skills.
               </div>
   
               <div class="item">
-                  <img src="./image/img3.jpg" alt="">
-  
-                  <div class="content">
-                      <div class="title">MAGIC SLIDER</div>
-                      <div class="type">NATURE</div>
-                      <div class="description">
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus quis eum consequuntur voluptate quae doloribus distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aut.
-                      </div>
-                      <div class="button">
-                          <button>SEE MORE</button>
-                      </div>
-                  </div>
+                <video src="./image/video.mp4" autoplay type="video/mp4" loop></video>
+
+                <div class="content">
+                    
+                </div>
               </div>
   
           </div>
@@ -2177,8 +2170,8 @@ and filmmaking skills.
                   <img src="./image/img4.jpg" alt="">
               </div>
               <div class="item">
-                  <img src="./image/img3.jpg" alt="">
-              </div>
+                <video src="./image/video.mp4"></video>
+            </div>
   
           </div>
   
@@ -2189,7 +2182,7 @@ and filmmaking skills.
           </div>
   
   
-      </div>
+      </div> -->
         <!-- image Gallery End -->
 
         <!-- Schedule -->
