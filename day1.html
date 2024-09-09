@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js
+"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="bg-black">
+    <div class="absolute w-full -z-10 bg-black h-[inherit] hidden">
+        <img
+          src="res/Synchronize logo(1).png"
+          alt=""
+          class="absolute top-[40%] opacity-30"
+        />
+      </div>
+      <!-- home area -->
+      <div
+        class="navbar sm:hidden bg-gradient-to-r from-[#4B000F] to-[#2E2E2E] "
+        id="navcont"
+      >
+        <div class="logo flex items-center pt-[0rem] pl-[.7rem]">
+          <img src="res/logos/synchronize.png" alt="" class="w-40 z-20" />
+        </div>
+        <div class="w-8 h-8 absolute  right-7 z-20" id="menu">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            class="size-8"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </div>
+        <div
+          class="absolute top-0 right-[100%] transform -translate-x-1/2 sm:hidden pt-16 bg-gradient-to-r from-[#4B000F] to-[#2E2E2E] w-full transition-all rounded-2xl"
+          id="nav"
+        >
+          <nav class="flex flex-col items-center font-semibold">
+            <a class="mb-4" href="index.html#home">Home</a>
+            <a class="mb-4" href="index.html#event" id="event-link">Event</a>
+            <a class="mb-4" href="index.html#schedule" id="schedule-link">Schedule</a>
+            <a class="mb-4" href="gallery.html" id="gallery">Gallery</a>
+          </nav>
+        </div>
+      </div>
+      <div class="navbar hidden sm:flex font-medium justify-center items-center bg-gradient-to-r from-[#4B000F] to-[#2E2E2E]">
+        <nav class="flex justify-center align-middle w-[100%]">
+          <a class="group lg:text-2xl mr-8 ml-8" href="index.html#home">Home
+            <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-[3px] bg-[#b32121]"></span>
+          </a>
+          <a class="group lg:text-2xl mr-8" href="index.html#event" id="event-link">Event
+            <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-[3px] bg-[#b32121]"></span>
+          </a>
+          <a class="group lg:text-2xl mr-8" href="index.html#schedule" id="schedule-link">Schedule
+            <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-[3px] bg-[#b32121]"></span>
+          </a>
+          <a class="group lg:text-2xl mr-8" href="gallery.html" id="gallery">Gallery
+            <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-[3px] bg-[#b32121]"></span>
+          </a>
+        </nav>
+      </div>
+    <section class="splide" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+              <ul class="splide__list">
+                  <li class="splide__slide"><img src="image/img1.jpg" alt=""></li>
+                  <li class="splide__slide"><img src="image/img2.jpg" alt=""></li>
+                  <li class="splide__slide"><img src="image/img3.jpg" alt=""></li>
+              </ul>
+        </div>
+        <div class="text-white absolute bottom-8">
+            <p class="text-2xl text-center w-[100vw]">Day 1 | Synchronize 2K24</p>
+        </div>
+    </section>
+
+  </body>
+  <script>
+    new Splide( '.splide', {
+        type: 'loop',
+        autoWidth: true,
+        lazyLoad: 'nearby',
+  autoScroll: {
+    speed: 1,
+  },
+}).mount( window.splide.Extensions );
+  </script>
+  <script src="script.js"></script>
+</html>

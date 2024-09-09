@@ -15,6 +15,23 @@ button:hover {
 }
 
 
+.splide__list {
+  height: 100vh !important;
+}
+
+.splide__slide {
+  width: 100% !important;
+  background-size: auto !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.splide__slide > img {
+  padding: 1rem;
+  border: red 1px solid;
+}
+
 
 .navbar {
   background-color: #bd0202;
@@ -88,7 +105,7 @@ button:hover {
   
 
 
+
   
 }
-
 
