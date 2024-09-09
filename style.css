@@ -14,9 +14,6 @@ button:hover {
   transition: all 0.3s ease-in;
 }
 
-.pixelate{
-  box-shadow: 2px 2px 2px #dfdfdf;
-}
 
 
 .navbar {
