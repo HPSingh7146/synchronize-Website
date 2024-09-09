@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photo Gallery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="bg-black text-white">
+    <div class="absolute w-full -z-10 bg-black h-[inherit] hidden"></div>
+        <img
+          src="res/Synchronize logo(1).png"
+          alt=""
+          class="absolute top-[40%] opacity-30"
+        />
+      </div>
+      <!-- home area -->
+      <div
+        class="navbar sm:hidden bg-gradient-to-r from-[#4B000F] to-[#2E2E2E] "
+        id="navcont"
+      >
+        <div class="logo flex items-center pt-[0rem] pl-[.7rem]">
+          <img src="res/logos/synchronize.png" alt="" class="w-40 z-20" />
+        </div>
+        <div class="w-8 h-8 absolute  right-7 z-20" id="menu">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            class="size-8"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </div>
+        <div
+          class="absolute top-0 right-[100%] transform -translate-x-1/2 sm:hidden pt-16 bg-gradient-to-r from-[#4B000F] to-[#2E2E2E] w-full transition-all rounded-2xl"
+          id="nav"
+        >
+          <nav class="flex flex-col items-center font-semibold">
+            <a class="mb-4" href="index.html#home">Home</a>
+            <a class="mb-4" href="index.html#event" id="event-link">Event</a>
+            <a class="mb-4" href="index.html#schedule" id="schedule-link">Schedule</a>
+            <a class="mb-4" href="gallery.html" id="gallery">Gallery</a>
+          </nav>
+        </div>
+      </div>
+      <div class="navbar hidden sm:flex font-medium justify-center items-center bg-gradient-to-r from-[#4B000F] to-[#2E2E2E]">
+        <nav class="flex justify-center align-middle w-[100%]">
+          <a class="group lg:text-2xl mr-8 ml-8" href="index.html">Home
+            <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-[3px] bg-[#b32121]"></span>
+          </a>
+          <a class="group lg:text-2xl mr-8" href="index.html#event" id="event-link">Event
+            <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-[3px] bg-[#b32121]"></span>
+          </a>
+          <a class="group lg:text-2xl mr-8" href="index.html#schedule" id="schedule-link">Schedule
+            <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-[3px] bg-[#b32121]"></span>
+          </a>
+          <a class="group lg:text-2xl mr-8" href="gallery.html" id="schedule-link">Gallery
+            <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-[3px] bg-[#b32121]"></span>
+          </a>
+        </nav>
+      </div>
+    <p class="text-center text-3xl p-4 mt-28">
+      Choose Which Day You have to go to!
+    </p>
+    <div class="flex flex-wrap justify-center items-center mx-auto my-8 gap-16 fixed z-50 w-full">
+      <a
+        href="day1.html"
+        class="p-8 bg-transparent text-xl rounded-xl w-40 text-center border border-red-600 hover:bg-red-600 transition-all duration-500"
+        >Day 1</a
+      >
+      <a
+        href="day2.html"
+        class="p-8 bg-transparent text-xl rounded-xl w-40 text-center border border-red-600 hover:bg-red-600 transition-all duration-500"
+        >Day 2</a
+      >
+      <a
+        href="day3.html"
+        class="p-8 bg-transparent text-xl rounded-xl w-40 text-center border border-red-600 hover:bg-red-600 transition-all duration-500"
+        >Day 3</a
+      >
+      <a
+        href="day4.html"
+        class="p-8 bg-transparent text-xl rounded-xl w-40 text-center border border-red-600 hover:bg-red-600 transition-all duration-500"
+        >Day 4</a
+      >
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
