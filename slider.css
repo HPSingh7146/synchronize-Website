@@ -1,5 +1,12 @@
 /* slider section  */
 
+.imageGallery img{
+    border-radius: 20px;
+}
+.imageGallery video{
+    border-radius: 20px;
+}
+
 .slider{
     height: 100vh;
     margin-top: -50px;
@@ -83,7 +90,7 @@
     bottom: 50px;
     left: 50%;
     width: max-content;
-    z-index: 90;
+    z-index: 99;
     display: flex;
     gap: 20px;
 }
@@ -191,6 +198,17 @@
     animation: showImage .5s linear 1 forwards;
 }
 
+.slider.next .list .item:nth-child(1) video{
+    width: 150px;
+    height: 220px;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    border-radius: 30px;
+    animation: showImage .5s linear 1 forwards;
+}
+
+
 @keyframes showImage{
     to{
         bottom: 0;
@@ -206,9 +224,12 @@
     animation: showThumbnail .5s linear 1 forwards;
 }
 .slider.prev .list .item img{
-    z-index: 100;
+    z-index: 99;
 }
 
+.slider.prev .list .item video{
+    z-index: 99;
+}
 
 @keyframes showThumbnail{
     from{
@@ -236,6 +257,12 @@
 }
 
 .slider.prev .list .item:nth-child(2) img{
+    animation: outFrame 0.5s linear 1 forwards;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.slider.prev .list .item:nth-child(2) video{
     animation: outFrame 0.5s linear 1 forwards;
     position: absolute;
     bottom: 0;
